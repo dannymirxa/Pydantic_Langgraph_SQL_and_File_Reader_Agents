@@ -99,7 +99,10 @@ async def main():
 
     # Example 3: Ambiguous request (should ideally go to SQL if it mentions "data" and "tables")
     ambiguous_result = await master_agent.run(
-        "For customers located in the USA, find the total sales amount for each customer. What is about risc?",
+        """
+           For customers located in the USA, find the total sales amount for each customer.
+           What is the content in human data?
+        """,
         deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
     )
     
@@ -109,7 +112,7 @@ if __name__ == "__main__":
     sql_response, file_read_response, generic_result = asyncio.run(main())
     # print(sql_response.output)
     # print(file_read_response.output)
-    print(generic_result)
+    print(generic_result.output)
 
     # # Example 2: File reading
     # file_read_result = master_agent.run(
