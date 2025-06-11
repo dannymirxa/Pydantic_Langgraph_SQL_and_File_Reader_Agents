@@ -1,0 +1,5612 @@
+[
+  {
+    "brand": "Honda",
+    "name": "Honda SP 125",
+    "price": "Rs.89,468 - 1 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "60 kmpl",
+    "cc": "123.94 cc",
+    "power": "10.87 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda Shine",
+    "price": "Rs.83,251 - 89,772*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "55 kmpl",
+    "cc": "123.94 cc",
+    "power": "10.74 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda Hornet 2.0",
+    "price": "Rs.1.43 - 1.57 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "57.35 kmpl",
+    "cc": "184.4 cc",
+    "power": "17.26 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda SP160",
+    "price": "Rs.1.21 - 1.28 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "65 kmpl",
+    "cc": "162.71 cc",
+    "power": "13.46 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda Hness CB350",
+    "price": "Rs.2.11 - 2.16 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "45.8 kmpl",
+    "cc": "348.36 cc",
+    "power": "21.07 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda Unicorn",
+    "price": "Rs.1.20 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "50 kmpl",
+    "cc": "162.71 cc",
+    "power": "13.18 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda CB350",
+    "price": "Rs.2 - 2.18 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "42.17 kmpl",
+    "cc": "348.36 cc",
+    "power": "21.07 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda CB350RS",
+    "price": "Rs.2.16 - 2.19 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "35 kmpl",
+    "cc": "348.36 cc",
+    "power": "21.07 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda Livo",
+    "price": "Rs.81,651 - 85,651*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "60 kmpl",
+    "cc": "109.51 cc",
+    "power": "8.79 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda Shine 100",
+    "price": "Rs.66,900 - 68,794*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "55 kmpl",
+    "cc": "98.98 cc",
+    "power": "7.38 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda CBR650R",
+    "price": "Rs.10.40 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "25 Kmpl",
+    "cc": "649 cc",
+    "power": "95.17 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda CB200X",
+    "price": "Rs.1.51 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "40 kmpl",
+    "cc": "184.4 cc",
+    "power": "17.26 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda CD 110 Dream",
+    "price": "Rs.76,401*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "65 kmpl",
+    "cc": "109.51 cc",
+    "power": "8.79 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda CB300R",
+    "price": "Rs.2.40 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "30 kmpl",
+    "cc": "286.01 cc",
+    "power": "31.13 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda CB300F",
+    "price": "Rs.1.70 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "30 kmpl",
+    "cc": "293.52 cc",
+    "power": "24.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda CB650R",
+    "price": "Rs.9.60 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "20.4 Kmpl",
+    "cc": "649 cc",
+    "power": "95.17 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda NX200",
+    "price": "Rs.1.69 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "35 Kmpl",
+    "cc": "184.4 cc",
+    "power": "16.99 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda Gold Wing",
+    "price": "Rs.39.16 Lakh*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "14 kmpl",
+    "cc": "1833 cc",
+    "power": "126.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda NX500",
+    "price": "Rs.5.90 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "27.78 kmpl",
+    "cc": "471 cc",
+    "power": "47.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda CB300F Flex-Fuel",
+    "price": "Rs.1.70 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "293.52 cc",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda CRF1100L Africa Twin",
+    "price": "Rs.15.97 - 17.51 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "20 kmpl",
+    "cc": "1082.96 cc",
+    "power": "99.2 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Honda",
+    "name": "Honda XL750 Transalp",
+    "price": "Rs.11 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "23 kmpl",
+    "cc": "755 cc",
+    "power": "91.7 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Classic 350",
+    "price": "Rs.1.95 - 2.33 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "41.55 kmpl",
+    "cc": "349 cc",
+    "power": "20.21 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Hunter 350",
+    "price": "Rs.1.50 - 1.82 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "36.2 kmpl",
+    "cc": "349 cc",
+    "power": "20.21 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Continental GT 650",
+    "price": "Rs.3.23 - 3.49 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "27 kmpl",
+    "cc": "647.95 cc",
+    "power": "47.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Bullet 350",
+    "price": "Rs.1.75 - 2.18 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "37 kmpl",
+    "cc": "349 cc",
+    "power": "20.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Meteor 350",
+    "price": "Rs.2.08 - 2.33 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "41.88 kmpl",
+    "cc": "349 cc",
+    "power": "20.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Guerrilla 450",
+    "price": "Rs.2.39 - 2.54 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "29.5 kmpl",
+    "cc": "452 cc",
+    "power": "40.02 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Himalayan 450",
+    "price": "Rs.2.85 - 2.98 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "30 kmpl",
+    "cc": "452 cc",
+    "power": "40.02 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Classic 650",
+    "price": "Rs.3.37 - 3.50 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "21.45 kmpl",
+    "cc": "647.95 cc",
+    "power": "47.04 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Interceptor 650",
+    "price": "Rs.3.06 - 3.35 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "25 kmpl",
+    "cc": "647.95 cc",
+    "power": "47.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Bear 650",
+    "price": "Rs.3.43 - 3.63 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "22 kmpl",
+    "cc": "648 cc",
+    "power": "47.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Shotgun 650",
+    "price": "Rs.3.64 - 3.77 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "22 kmpl",
+    "cc": "648 cc",
+    "power": "47.65 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Super Meteor 650",
+    "price": "Rs.3.68 - 3.99 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "25 kmpl",
+    "cc": "648 cc",
+    "power": "47 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Goan Classic 350",
+    "price": "Rs.2.35 - 2.38 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "36.2 kmpl",
+    "cc": "349 cc",
+    "power": "20.48 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Royal Enfield",
+    "name": "Royal Enfield Scram 440",
+    "price": "Rs.2.08 - 2.15 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "29.5 kmpl",
+    "cc": "443 cc",
+    "power": "25.42 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "TVS",
+    "name": "TVS Raider",
+    "price": "Rs.87,010 - 1.02 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "71.94 kmpl",
+    "cc": "124.8 cc",
+    "power": "11.38 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "TVS",
+    "name": "TVS Apache RTR 160",
+    "price": "Rs.1.21 - 1.31 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "47 kmpl",
+    "cc": "160 cc",
+    "power": "16.04 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "TVS",
+    "name": "TVS Apache RTR 160 4V",
+    "price": "Rs.1.25 - 1.40 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "45 kmpl",
+    "cc": "159.7 cc",
+    "power": "17.55 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "TVS",
+    "name": "TVS Ronin",
+    "price": "Rs.1.36 - 1.73 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "42.95 kmpl",
+    "cc": "225.9 cc",
+    "power": "20.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "TVS",
+    "name": "TVS Apache RR 310",
+    "price": "Rs.2.78 - 3 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "34 kmpl",
+    "cc": "312.2 cc",
+    "power": "38 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "TVS",
+    "name": "TVS Sport",
+    "price": "Rs.59,881 - 71,785*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "70 kmpl",
+    "cc": "109.7 cc",
+    "power": "8.19 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "TVS",
+    "name": "TVS Apache RTR 310",
+    "price": "Rs.2.50 - 2.72 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "35 kmpl",
+    "cc": "312.12 cc",
+    "power": "35.6 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "TVS",
+    "name": "TVS Apache RTR 200 4V",
+    "price": "Rs.1.49 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "37 kmpl",
+    "cc": "197.75 cc",
+    "power": "20.82 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "TVS",
+    "name": "TVS Apache RTR 180",
+    "price": "Rs.1.35 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "45 kmpl",
+    "cc": "177.4 cc",
+    "power": "17.13 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "TVS",
+    "name": "TVS Radeon",
+    "price": "Rs.59,880 - 83,384*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "73.68 kmpl",
+    "cc": "109.7 cc",
+    "power": "8.19 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "TVS",
+    "name": "TVS Star City Plus",
+    "price": "Rs.76,791 - 79,791*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "83.09 kmpl",
+    "cc": "109.7 cc",
+    "power": "8.19 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "Yamaha MT 15 V2",
+    "price": "Rs.1.70 - 1.74 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "56.87 kmpl",
+    "cc": "155 cc",
+    "power": "18.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "Yamaha R15 V4",
+    "price": "Rs.1.84 - 2.12 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "45 kmpl",
+    "cc": "155 cc",
+    "power": "18.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "Yamaha Aerox 155",
+    "price": "Rs.1.50 - 1.53 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "45 kmpl",
+    "cc": "155 cc",
+    "power": "15 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "2025 Yamaha FZ-S Fi",
+    "price": "Rs.1.35 - 1.45 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "60 kmpl",
+    "cc": "149 cc",
+    "power": "12.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "Yamaha FZS-FI V4",
+    "price": "Rs.1.31 - 1.31 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "46 kmpl",
+    "cc": "149 cc",
+    "power": "12.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "Yamaha R15S",
+    "price": "Rs.1.67 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "40 kmpl",
+    "cc": "155 cc",
+    "power": "18.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "Yamaha RayZR 125 Fi Hybrid",
+    "price": "Rs.86,430 - 99,970*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "71.33 kmpl",
+    "cc": "125 cc",
+    "power": "8.2 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "Yamaha FZ-FI V3",
+    "price": "Rs.1.18 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "49.3 kmpl",
+    "cc": "149 cc",
+    "power": "12.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "Yamaha Fascino 125 Fi Hybrid",
+    "price": "Rs.80,430 - 96,650*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "68.75 kmpl",
+    "cc": "125 cc",
+    "power": "8.2 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "Yamaha FZ X",
+    "price": "Rs.1.38 - 1.42 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "55.11 kmpl",
+    "cc": "149 cc",
+    "power": "12.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "Yamaha MT-03",
+    "price": "Rs.3.50 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "26.31 kmpl",
+    "cc": "321 cc",
+    "power": "42 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "Yamaha FZS-FI V3",
+    "price": "Rs.1.23 - 1.24 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "49.31 kmpl",
+    "cc": "149 cc",
+    "power": "12.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yamaha",
+    "name": "Yamaha R3",
+    "price": "Rs.3.60 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "25 kmpl",
+    "cc": "321 cc",
+    "power": "42 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Splendor Plus",
+    "price": "Rs.77,176 - 80,176*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "70 kmpl",
+    "cc": "97.2 cc",
+    "power": "8.02 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Xtreme 125R",
+    "price": "Rs.96,425 - 1.02 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "66 kmpl",
+    "cc": "124.7 cc",
+    "power": "11.55 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Splendor Plus XTEC",
+    "price": "Rs.81,001 - 86,051*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "70 kmpl",
+    "cc": "97.2 cc",
+    "power": "8.02 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero HF Deluxe",
+    "price": "Rs.59,998 - 69,518*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "70 kmpl",
+    "cc": "97.2 cc",
+    "power": "8.02 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Xtreme 250R",
+    "price": "Rs.1.80 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "37 kmpl",
+    "cc": "249.03 cc",
+    "power": "30 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Xtreme 160R",
+    "price": "Rs.1.12 - 1.13 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "46 kmpl",
+    "cc": "163.2 cc",
+    "power": "15 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero XPulse 200 4V",
+    "price": "Rs.1.52 - 1.68 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "36 kmpl",
+    "cc": "199.6 cc",
+    "power": "19.16 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero XPulse 210",
+    "price": "Rs.1.76 - 1.86 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "40 Kmpl",
+    "cc": "210 cc",
+    "power": "24.67 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Super Splendor XTEC",
+    "price": "Rs.86,128 - 92,028*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "69 kmpl",
+    "cc": "124.7 cc",
+    "power": "10.84 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Glamour",
+    "price": "Rs.84,698 - 90,698*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "63 kmpl",
+    "cc": "125 cc",
+    "power": "10.53 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Destini 125",
+    "price": "Rs.80,450 - 91,700*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "59 kmpl",
+    "cc": "124.6 cc",
+    "power": "9.12 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Glamour XTEC",
+    "price": "Rs.89,998 - 94,598*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "63 kmpl",
+    "cc": "124.7 cc",
+    "power": "10.84 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Super Splendor",
+    "price": "Rs.80,848 - 84,748*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "60 kmpl",
+    "cc": "124.7 cc",
+    "power": "10.87 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Karizma XMR",
+    "price": "Rs.1.81 - 2.02 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "41.55 kmpl",
+    "cc": "210 cc",
+    "power": "25.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Xoom 110",
+    "price": "Rs.72,284 - 84,017*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "53.4 kmpl",
+    "cc": "110.9 cc",
+    "power": "8.15 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Xoom 125",
+    "price": "Rs.86,900 - 92,900*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "52.8 kmpl",
+    "cc": "124.6 cc",
+    "power": "9.92 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Mavrick 440",
+    "price": "Rs.2 - 2.25 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "32 kmpl",
+    "cc": "440 cc",
+    "power": "27.36 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Pleasure Plus",
+    "price": "Rs.71,763 - 83,813*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "50 kmpl",
+    "cc": "110.9 cc",
+    "power": "8.15 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Passion Plus",
+    "price": "Rs.79,901 - 81,651*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "70 kmpl",
+    "cc": "97.2 cc",
+    "power": "8.02 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Xtreme 160R 4V",
+    "price": "Rs.1.39 - 1.41 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "48 kmpl",
+    "cc": "163.2 cc",
+    "power": "16.9 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Xoom 160",
+    "price": "Rs.1.49 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "40 Kmpl",
+    "cc": "156 cc",
+    "power": "14.81 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero HF 100",
+    "price": "Rs.59,018 - 60,118*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "70 kmpl",
+    "cc": "97.2 cc",
+    "power": "8.02 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Hero",
+    "name": "Hero Destini Prime",
+    "price": "Rs.72,799 - 74,199*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "56 kmpl",
+    "cc": "124.6 cc",
+    "power": "9.09 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Pulsar NS200",
+    "price": "Rs.1.60 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "40.36 kmpl",
+    "cc": "199.5 cc",
+    "power": "24.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Pulsar RS200",
+    "price": "Rs.1.84 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "35 kmpl",
+    "cc": "199.5 cc",
+    "power": "24.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Chetak 3501",
+    "price": "Rs.1.35 - 1.40 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Pulsar NS160",
+    "price": "Rs.1.49 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "40.36 kmpl",
+    "cc": "160.3 cc",
+    "power": "17.2 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Pulsar 150",
+    "price": "Rs.1.13 - 1.20 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "47.5 kmpl",
+    "cc": "149.5 cc",
+    "power": "14 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Pulsar N160",
+    "price": "Rs.1.22 - 1.43 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "59.11 kmpl",
+    "cc": "164.82 cc",
+    "power": "16 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Pulsar NS400Z",
+    "price": "Rs.1.86 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "34 kmpl",
+    "cc": "373.27 cc",
+    "power": "40 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Pulsar 125",
+    "price": "Rs.85,549 - 93,613*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "51.46 kmpl",
+    "cc": "124.4 cc",
+    "power": "11.8 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Pulsar NS 125",
+    "price": "Rs.99,994 - 1.07 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "64.75 kmpl",
+    "cc": "124.45 cc",
+    "power": "12 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Freedom 125",
+    "price": "Rs.90,272 - 1.10 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "65 kmpl",
+    "cc": "124.58 cc",
+    "power": "9.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Dominar 400",
+    "price": "Rs.2.33 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "27 kmpl",
+    "cc": "373.3 cc",
+    "power": "40 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Pulsar N150",
+    "price": "Rs.1.25 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "48 kmpl",
+    "cc": "149.68 cc",
+    "power": "14.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Pulsar 220 F",
+    "price": "Rs.1.42 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "40 kmpl",
+    "cc": "220 cc",
+    "power": "20.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Pulsar N250",
+    "price": "Rs.1.53 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "39 kmpl",
+    "cc": "249.07 cc",
+    "power": "24.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Platina 110",
+    "price": "Rs.71,558 - 74,214*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "70 kmpl",
+    "cc": "115.45 cc",
+    "power": "8.6 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Pulsar N125",
+    "price": "Rs.93,158 - 98,355*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "58 kmpl",
+    "cc": "124.58 cc",
+    "power": "12 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Platina 100",
+    "price": "Rs.68,890*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "70 kmpl",
+    "cc": "102 cc",
+    "power": "7.9 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Dominar 250",
+    "price": "Rs.1.86 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "35.03 kmpl",
+    "cc": "248.77 cc",
+    "power": "27 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj CT 110X",
+    "price": "Rs.70,381*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "70 kmpl",
+    "cc": "115.45 cc",
+    "power": "8.6 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Avenger Street 160",
+    "price": "Rs.1.20 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "47.2 kmpl",
+    "cc": "160 cc",
+    "power": "15 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Chetak 2903",
+    "price": "Rs.1.02 - 1.06 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "4.2 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Chetak 3503",
+    "price": "Rs.1.10 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "3.25 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Chetak 3502",
+    "price": "Rs.1.23 - 1.28 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Avenger Cruise 220",
+    "price": "Rs.1.47 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "40 kmpl",
+    "cc": "220 cc",
+    "power": "19.03 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bajaj",
+    "name": "Bajaj Avenger 220 Street",
+    "price": "Rs.1.43 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "40 kmpl",
+    "cc": "220 cc",
+    "power": "19.03 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 200 Duke",
+    "price": "Rs.2.07 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "35 kmpl",
+    "cc": "199.5 cc",
+    "power": "25 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM Duke 390",
+    "price": "Rs.2.97 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "28.9 kmpl",
+    "cc": "398.63 cc",
+    "power": "46 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 250 Duke",
+    "price": "Rs.2.30 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "30.08 kmpl",
+    "cc": "249.07 cc",
+    "power": "31 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM RC 390",
+    "price": "Rs.3.23 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "25.89 kmpl",
+    "cc": "373.27 cc",
+    "power": "43.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 390 Adventure",
+    "price": "Rs.3.68 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "30 kmpl",
+    "cc": "398.63 cc",
+    "power": "46 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 1390 Super Duke R",
+    "price": "Rs.22.96 Lakh*(View On Road Price)",
+    "rating": "3.5/5",
+    "mileage": "16.94 kmpl",
+    "cc": "1350 cc",
+    "power": "190.34 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 250 Adventure",
+    "price": "Rs.2.60 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "38.12 kmpl",
+    "cc": "249.07 cc",
+    "power": "31 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM RC 200",
+    "price": "Rs.2.23 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "35 kmpl",
+    "cc": "199.5 cc",
+    "power": "25 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 390 Enduro R",
+    "price": "Rs.3.39 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "29.4 kmpl",
+    "cc": "399 cc",
+    "power": "46 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 390 Adventure X",
+    "price": "Rs.2.91 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "30 kmpl",
+    "cc": "398.63 cc",
+    "power": "46 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 890 Duke",
+    "price": "Rs.14.50 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "21.09 kmpl",
+    "cc": "889 cc",
+    "power": "121 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 450 SX-F",
+    "price": "Rs.10.25 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "449.9 cc",
+    "cc": "62.96 PS",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 85 SX",
+    "price": "Rs.6.69 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "84.9 cc",
+    "cc": "16.4 PS",
+    "power": "14 Nm @ 8500",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 50 SX",
+    "price": "Rs.4.75 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "49.9 cc",
+    "cc": "5.4 PS",
+    "power": "5.2 Nm @ 7500 rpm",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 1290 Super Adventure S",
+    "price": "Rs.22.74 Lakh*(View On Road Price)",
+    "rating": "4.9/5",
+    "mileage": "17.54 kmpl",
+    "cc": "1301 cc",
+    "power": "160.43 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 250 SX-F",
+    "price": "Rs.9.58 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "249.9 cc",
+    "cc": "46.8 PS",
+    "power": "26.5 Nm @ 9500 rpm",
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 65 SX",
+    "price": "Rs.5.47 Lakh*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "64.9 cc",
+    "cc": "11.35 PS",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "KTM",
+    "name": "KTM 350 EXC-F",
+    "price": "Rs.12.96 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "349.7 cc",
+    "cc": "45 PS",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Ninja ZX-10R",
+    "price": "Rs.18.50 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "12 kmpl",
+    "cc": "998 cc",
+    "power": "203 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Z900",
+    "price": "Rs.9.38 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "17 kmpl",
+    "cc": "948 cc",
+    "power": "125 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Ninja 300",
+    "price": "Rs.3.43 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "30 kmpl",
+    "cc": "296 cc",
+    "power": "39 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Ninja H2 SX",
+    "price": "Rs.32.91 - 32.95 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "15 kmpl",
+    "cc": "998 cc",
+    "power": "200 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Ninja ZX-6R",
+    "price": "Rs.11.53 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "23.6 kmpl",
+    "cc": "636 cc",
+    "power": "124 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Ninja ZX-4R",
+    "price": "Rs.8.79 - 9.42 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "24.18 kmpl",
+    "cc": "399 cc",
+    "power": "77 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Vulcan S",
+    "price": "Rs.7.10 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "20.58 kmpl",
+    "cc": "649 cc",
+    "power": "61 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki W175",
+    "price": "Rs.1.22 - 1.35 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "45 kmpl",
+    "cc": "177 cc",
+    "power": "13 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Z650",
+    "price": "Rs.6.79 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "19.02 kmpl",
+    "cc": "649 cc",
+    "power": "68 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Ninja 500",
+    "price": "Rs.5.29 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "26.31 kmpl",
+    "cc": "451 cc",
+    "power": "45.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Eliminator",
+    "price": "Rs.5.76 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "30 kmpl",
+    "cc": "451 cc",
+    "power": "45 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Ninja 650",
+    "price": "Rs.7.27 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "21 kmpl",
+    "cc": "649 cc",
+    "power": "68 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki KLX230",
+    "price": "Rs.3.30 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "40 Kmpl",
+    "cc": "233 cc",
+    "power": "18.1 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Z H2",
+    "price": "Rs.24.18 - 28.59 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "12 kmpl",
+    "cc": "998 cc",
+    "power": "200 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Versys 650",
+    "price": "Rs.7.77 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "20 kmpl",
+    "cc": "649 cc",
+    "power": "67 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Z650RS",
+    "price": "Rs.7.20 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "23 kmpl",
+    "cc": "649 cc",
+    "power": "68 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki KX 250",
+    "price": "Rs.7.99 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "30 kmpl",
+    "cc": "249 cc",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki KLX110R L",
+    "price": "Rs.3.12 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "20 Kmpl",
+    "cc": "112 cc",
+    "power": "7.29 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki KLX 450R",
+    "price": "Rs.8.99 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "23 kmpl",
+    "cc": "449 cc",
+    "power": "56.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki KX 450",
+    "price": "Rs.9.28 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "25 kmpl",
+    "cc": "449 cc",
+    "power": "3.44 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki KLX230RS",
+    "price": "Rs.5.21 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "14 kmpl",
+    "cc": "233 cc",
+    "power": "20 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki KX65",
+    "price": "Rs.3.12 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "30 kmpl",
+    "cc": "64 cc",
+    "power": "63 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Ninja 1100SX",
+    "price": "Rs.13.49 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "17.85 kmpl",
+    "cc": "1099 cc",
+    "power": "136 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki KX 85",
+    "price": "Rs.4.20 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "25 kmpl",
+    "cc": "84 cc",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki KX112",
+    "price": "Rs.4.88 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "24.18 kmpl",
+    "cc": "112 cc",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki KLX 300R",
+    "price": "Rs.5.60 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "45 kmpl",
+    "cc": "292 cc",
+    "power": "29 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki Z900RS",
+    "price": "Rs.17.47 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "15 kmpl",
+    "cc": "948 cc",
+    "power": "111 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Kawasaki",
+    "name": "Kawasaki KLX 140R F",
+    "price": "Rs.4.11 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "60 kmpl",
+    "cc": "144 cc",
+    "power": "11 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW G 310 RR",
+    "price": "Rs.3.05 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "30.3 kmpl",
+    "cc": "312.12 cc",
+    "power": "34 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW S 1000 RR",
+    "price": "Rs.20.75 - 25.60 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "15.62 kmpl",
+    "cc": "999 cc",
+    "power": "206.66 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW C 400 GT",
+    "price": "Rs.11.50 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "28.57  kmpl",
+    "cc": "350 cc",
+    "power": "33.99 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW M 1000 RR",
+    "price": "Rs.49 - 55 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "15.38 kmpl",
+    "cc": "999 cc",
+    "power": "212.10 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW R 1300 GS",
+    "price": "Rs.21.20 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "20.83 kmpl",
+    "cc": "1300 cc",
+    "power": "145.48 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW CE 02",
+    "price": "Rs.4.50 Lakh*(View On Road Price)",
+    "rating": "3.3/5",
+    "mileage": "11 kW",
+    "cc": "3.3 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW S 1000 XR",
+    "price": "Rs.22.75 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "16.12 kmpl",
+    "cc": "999 cc",
+    "power": "172.35PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW S 1000 R",
+    "price": "Rs.19 - 23.30 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "16.12 kmpl",
+    "cc": "999 cc",
+    "power": "165 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW K 1600 Bagger",
+    "price": "Rs.33.33 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "16.94 kmpl",
+    "cc": "1649 cc",
+    "power": "160.43 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW K 1600 GTL",
+    "price": "Rs.33.33 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "16.94 kmpl",
+    "cc": "1649 cc",
+    "power": "160.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW R 1250 RT",
+    "price": "Rs.24.95 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "21 kmpl",
+    "cc": "1254 cc",
+    "power": "135.9 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW R 18 Transcontinental",
+    "price": "Rs.32.50 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "17.24 kmpl",
+    "cc": "1802 cc",
+    "power": "91.09 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW R 12 nineT",
+    "price": "Rs.21.10 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "19.60 kmpl",
+    "cc": "1170 cc",
+    "power": "110.51 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW K 1600 Grand America",
+    "price": "Rs.33.33 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "16.9 kmpl",
+    "cc": "1649 cc",
+    "power": "160.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW R 12",
+    "price": "Rs.20.10 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "19.60 kmpl",
+    "cc": "1170 cc",
+    "power": "96.31 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW F 900 XR",
+    "price": "Rs.12.55 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "23.8 kmpl",
+    "cc": "895 cc",
+    "power": "104.6 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW M 1000 XR",
+    "price": "Rs.45.50 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "15.38 kmpl",
+    "cc": "999 cc",
+    "power": "203.78 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW CE 04",
+    "price": "Rs.15.25 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "31 kW",
+    "cc": "4.2 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "BMW",
+    "name": "BMW F 900 GS",
+    "price": "Rs.13.75 - 14.75 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "22 kmpl",
+    "cc": "895 cc",
+    "power": "104.69 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Suzuki",
+    "name": "Suzuki Access 125",
+    "price": "Rs.83,800 - 1.02 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "45 kmpl",
+    "cc": "124 cc",
+    "power": "8.42 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Suzuki",
+    "name": "Suzuki Hayabusa",
+    "price": "Rs.16.90 - 17.70 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "17 kmpl",
+    "cc": "1340 cc",
+    "power": "190 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Suzuki",
+    "name": "Suzuki Burgman Street",
+    "price": "Rs.96,399 - 1.18 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "48 kmpl",
+    "cc": "124 cc",
+    "power": "8.7 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Suzuki",
+    "name": "Suzuki Gixxer SF",
+    "price": "Rs.1.47 - 1.48 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "45 kmpl",
+    "cc": "155 cc",
+    "power": "13.6 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Suzuki",
+    "name": "Suzuki Gixxer",
+    "price": "Rs.1.38 - 1.38 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "38 kmpl",
+    "cc": "155 cc",
+    "power": "13.6 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Suzuki",
+    "name": "Suzuki Avenis",
+    "price": "Rs.93,200 - 94,000*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "55 kmpl",
+    "cc": "124.3 cc",
+    "power": "8.7 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Suzuki",
+    "name": "Suzuki V-Strom SX",
+    "price": "Rs.2.16 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "32 kmpl",
+    "cc": "249 cc",
+    "power": "26.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Suzuki",
+    "name": "Suzuki Gixxer SF 250",
+    "price": "Rs.2.07 - 2.08 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "38 kmpl",
+    "cc": "250 cc",
+    "power": "26.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Suzuki",
+    "name": "Suzuki GSX-8R",
+    "price": "Rs.9.25 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "25 kmpl",
+    "cc": "776 cc",
+    "power": "82.93 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Suzuki",
+    "name": "Suzuki Katana",
+    "price": "Rs.13.61 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "23 kmpl",
+    "cc": "999 cc",
+    "power": "152.27 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Suzuki",
+    "name": "Suzuki Gixxer SF 250 Flex Fuel",
+    "price": "Rs.2.17 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "249 cc",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Suzuki",
+    "name": "Suzuki V-Strom 800 DE",
+    "price": "Rs.10.30 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "22.7 kmpl",
+    "cc": "776 cc",
+    "power": "84.3 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Jawa",
+    "name": "Jawa 42 Bobber",
+    "price": "Rs.2.10 - 2.30 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "30.56 kmpl",
+    "cc": "334 cc",
+    "power": "29.9 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Jawa",
+    "name": "Jawa 42 FJ",
+    "price": "Rs.2.10 - 2.20 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "32 kmpl",
+    "cc": "334 cc",
+    "power": "29.1 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Jawa",
+    "name": "Jawa 42",
+    "price": "Rs.1.73 - 1.98 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "33 kmpl",
+    "cc": "294.72 cc",
+    "power": "27.32 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Jawa",
+    "name": "Jawa Perak",
+    "price": "Rs.2.40 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "34.05 kmpl",
+    "cc": "334 cc",
+    "power": "22.01 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Jawa",
+    "name": "Jawa 350",
+    "price": "Rs.1.99 - 2.29 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "30 kmpl",
+    "cc": "334 cc",
+    "power": "22.57 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Speed 400",
+    "price": "Rs.2.42 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "30 kmpl",
+    "cc": "398.15 cc",
+    "power": "40 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Scrambler 400 X",
+    "price": "Rs.2.66 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "28.3 kmpl",
+    "cc": "398.15 cc",
+    "power": "40 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Rocket 3",
+    "price": "Rs.21.99 - 22.59 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "15.15 kmpl",
+    "cc": "2458 cc",
+    "power": "182 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Street Triple 765",
+    "price": "Rs.10.17 - 12.07 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "19.2 kmpl",
+    "cc": "765 cc",
+    "power": "130 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Speed T4",
+    "price": "Rs.1.99 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "30 kmpl",
+    "cc": "398.15 cc",
+    "power": "31 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Daytona 660",
+    "price": "Rs.9.72 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "20.4 kmpl",
+    "cc": "660 cc",
+    "power": "95 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Trident 660",
+    "price": "Rs.8.12 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "17.47 kmpl",
+    "cc": "660 cc",
+    "power": "81 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Bonneville Bobber",
+    "price": "Rs.12.05 - 12.65 Lakh*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "22.22 Kmpl",
+    "cc": "1200 cc",
+    "power": "78 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Speed Twin 900",
+    "price": "Rs.8.89 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "25 kmpl",
+    "cc": "900 cc",
+    "power": "65 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Speed Triple 1200",
+    "price": "Rs.17.95 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "17.9 kmpl",
+    "cc": "1160 cc",
+    "power": "180 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Bonneville T100",
+    "price": "Rs.9.69 - 10.29 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "24.39 kmpl",
+    "cc": "900 cc",
+    "power": "65 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Scrambler 900",
+    "price": "Rs.9.59 - 10.19 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "23.2 kmpl",
+    "cc": "900 cc",
+    "power": "65 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Bonneville T120",
+    "price": "Rs.11.09 - 11.69 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "21.27 kmpl",
+    "cc": "1200 cc",
+    "power": "80 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Bonneville Speedmaster",
+    "price": "Rs.12.05 - 12.85 Lakh*(View On Road Price)",
+    "rating": "3.5/5",
+    "mileage": "22.22 Kmpl",
+    "cc": "1200 cc",
+    "power": "78 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Tiger 1200",
+    "price": "Rs.19.39 - 21.89 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "19.6 kmpl",
+    "cc": "1160 cc",
+    "power": "150 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Tiger 900",
+    "price": "Rs.13.95 - 15.95 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "21.27 kmpl",
+    "cc": "888 cc",
+    "power": "108 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Triumph",
+    "name": "Triumph Tiger Sport 660",
+    "price": "Rs.9.45 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "22.22 Kmpl",
+    "cc": "660 cc",
+    "power": "81 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Harley Davidson",
+    "name": "Harley Davidson X440",
+    "price": "Rs.2.40 - 2.80 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "35 kmpl",
+    "cc": "440 cc",
+    "power": "27.37 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Harley Davidson",
+    "name": "Harley Davidson Sportster S",
+    "price": "Rs.16.49 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "19.6 kmpl",
+    "cc": "1252 cc",
+    "power": "122.3 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Harley Davidson",
+    "name": "Harley Davidson Fat Boy 114",
+    "price": "Rs.25.69 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "18.1 kmpl",
+    "cc": "1868 cc",
+    "power": "95.1 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Harley Davidson",
+    "name": "Harley Davidson Nightster",
+    "price": "Rs.13.39 - 14.09 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "18.1 kmpl",
+    "cc": "975 cc",
+    "power": "89.7 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Harley Davidson",
+    "name": "Harley Davidson Fat Bob 114",
+    "price": "Rs.21.49 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "18.1 kmpl",
+    "cc": "1868 cc",
+    "power": "93.8 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Harley Davidson",
+    "name": "Harley-Davidson Breakout 117",
+    "price": "Rs.30.99 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "17.85 kmpl",
+    "cc": "1923 cc",
+    "power": "103.33 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Harley Davidson",
+    "name": "Harley Davidson Pan America 1250",
+    "price": "Rs.24.64 Lakh*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "18.33 kmpl",
+    "cc": "1252 cc",
+    "power": "152 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Harley Davidson",
+    "name": "Harley Davidson Road Glide",
+    "price": "Rs.41.79 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "16.3 kmpl",
+    "cc": "1868 cc",
+    "power": "93.8 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Harley Davidson",
+    "name": "Harley Davidson Heritage Classic",
+    "price": "Rs.27.19 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "18.1 kmpl",
+    "cc": "1868 cc",
+    "power": "95.1 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Harley Davidson",
+    "name": "Harley Davidson Street Glide",
+    "price": "Rs.38.79 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "16.3 kmpl",
+    "cc": "1868 cc",
+    "power": "93.8 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ather",
+    "name": "Ather 450X",
+    "price": "Rs.1.49 - 1.79 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "6.4 kW",
+    "cc": "5.45 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ather",
+    "name": "Ather Rizta",
+    "price": "Rs.1.10 - 1.49 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "4.3 kW",
+    "cc": "6.1 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ather",
+    "name": "Ather 450S",
+    "price": "Rs.1.22 - 1.36 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "5.4 kW",
+    "cc": "7.45 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ather",
+    "name": "Ather 450 Apex",
+    "price": "Rs.1.90 Lakh*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "7 kW",
+    "cc": "5.45 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Aprilia",
+    "name": "Aprilia RS 457",
+    "price": "Rs.4.23 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "30 kmpl",
+    "cc": "457 cc",
+    "power": "47.58 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Aprilia",
+    "name": "Aprilia Tuono 457",
+    "price": "Rs.3.95 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "25.5 kmpl",
+    "cc": "457 cc",
+    "power": "47.58 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Aprilia",
+    "name": "Aprilia SR 160",
+    "price": "Rs.1.32 - 1.41 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "35 kmpl",
+    "cc": "160.03 cc",
+    "power": "11.27 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Aprilia",
+    "name": "Aprilia RSV4",
+    "price": "Rs.31.26 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "15.4 kmpl",
+    "cc": "1099 cc",
+    "power": "216.85 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Aprilia",
+    "name": "Aprilia RS 660",
+    "price": "Rs.17.74 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "20.4 kmpl",
+    "cc": "659 cc",
+    "power": "100 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Aprilia",
+    "name": "Aprilia SR 125",
+    "price": "Rs.1.23 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "40 kmpl",
+    "cc": "124.45 cc",
+    "power": "10.11 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Aprilia",
+    "name": "Aprilia SXR 160",
+    "price": "Rs.1.44 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "35 kmpl",
+    "cc": "160.03 cc",
+    "power": "11.09 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Aprilia",
+    "name": "Aprilia SXR 125",
+    "price": "Rs.1.33 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "40 kmpl",
+    "cc": "125 cc",
+    "power": "9.61 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Aprilia",
+    "name": "Aprilia SR Storm",
+    "price": "Rs.1.15 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "38.5 kmpl",
+    "cc": "124.49 cc",
+    "power": "9.92 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati Panigale V4",
+    "price": "Rs.29.99 - 36.50 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "15.38 kmpl",
+    "cc": "1103 cc",
+    "power": "218.99 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati Monster",
+    "price": "Rs.12.95 - 15.95 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "18.9 kmpl",
+    "cc": "937 cc",
+    "power": "112.54 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati Streetfighter V4",
+    "price": "Rs.24.62 - 28 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "13.2 kmpl",
+    "cc": "1103 cc",
+    "power": "208 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati Diavel V4",
+    "price": "Rs.27.21 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "18.2 kmpl",
+    "cc": "1158 cc",
+    "power": "170.33 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati Scrambler 800",
+    "price": "Rs.9.97 - 12.60 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "19.2 kmpl",
+    "cc": "803 cc",
+    "power": "74.01 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati SuperSport 950",
+    "price": "Rs.16.06 - 19.11 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "17 kmpl",
+    "cc": "937 cc",
+    "power": "110.1 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati Multistrada V4",
+    "price": "Rs.21.48 - 40.67 Lakh*(View On Road Price)",
+    "rating": "3.0/5",
+    "mileage": "13.6 kmpl",
+    "cc": "1103 cc",
+    "power": "182.4 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati Hypermotard 950",
+    "price": "Rs.16 - 19.05 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "19.6 kmpl",
+    "cc": "937 cc",
+    "power": "114.2 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati Streetfighter V2",
+    "price": "Rs.18.50 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "16.7 kmpl",
+    "cc": "955 cc",
+    "power": "155.12 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati Scrambler 1100",
+    "price": "Rs.13.40 - 15.99 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "20 kmpl",
+    "cc": "1079 cc",
+    "power": "85.65 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati Panigale V2",
+    "price": "Rs.20.98 - 24.13 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "16.6 kmpl",
+    "cc": "955 cc",
+    "power": "157.15 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati Multistrada V2",
+    "price": "Rs.16.35 - 18.99 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "16.9 kmpl",
+    "cc": "937 cc",
+    "power": "114.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ducati",
+    "name": "Ducati DesertX",
+    "price": "Rs.18.33 - 23.71 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "17.8 kmpl",
+    "cc": "937 cc",
+    "power": "111.52 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Ola Electric",
+    "name": "Ola S1 Pro",
+    "price": "Rs.1.16 - 1.36 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "5.5 kW",
+    "cc": "6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ola Electric",
+    "name": "Ola S1 X",
+    "price": "Rs.65,499 - 92,999*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "5.5 kW",
+    "cc": "6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ola Electric",
+    "name": "Ola Roadster",
+    "price": "Rs.1.05 - 1.40 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "13 kW",
+    "cc": "7.9 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ola Electric",
+    "name": "Ola S1 Z",
+    "price": "Rs.59,999 - 64,999*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "3 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ola Electric",
+    "name": "Ola S1 X Plus",
+    "price": "Rs.1.10 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "5.5 kW",
+    "cc": "6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ola Electric",
+    "name": "Ola S1 Air",
+    "price": "Rs.89,999*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "2.7 kW",
+    "cc": "5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ola Electric",
+    "name": "Ola Roadster X",
+    "price": "Rs.84,999 - 1.05 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "7 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ola Electric",
+    "name": "Ola Gig",
+    "price": "Rs.39,999 - 49,999*(View On Road Price)",
+    "rating": "3.9/5",
+    "mileage": "1.5 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ola Electric",
+    "name": "Ola Roadster X+",
+    "price": "Rs.1.15 - 1.85 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "11 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ola Electric",
+    "name": "Ola Roadster Pro",
+    "price": "Rs.2 - 2.50 Lakh*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "52 kW",
+    "cc": "7.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ola Electric",
+    "name": "Ola S1 Pro Plus",
+    "price": "Rs.1.48 - 1.88 Lakh*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "5.5 kW",
+    "cc": "8.4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Keeway",
+    "name": "Keeway SR125",
+    "price": "Rs.1.20 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "50 kmpl",
+    "cc": "125 cc",
+    "power": "9.83 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Keeway",
+    "name": "Keeway V302C",
+    "price": "Rs.4.29 Lakh*(View On Road Price)",
+    "rating": "3.9/5",
+    "mileage": "37.03 kmpl",
+    "cc": "298 cc",
+    "power": "29.9 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Keeway",
+    "name": "Keeway SR 250",
+    "price": "Rs.1.49 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "40 kmpl",
+    "cc": "223 cc",
+    "power": "17 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Keeway",
+    "name": "Keeway K300 SF",
+    "price": "Rs.1.69 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "40 kmpl",
+    "cc": "292.4 cc",
+    "power": "27.88 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Keeway",
+    "name": "Keeway K-Light 250V",
+    "price": "Rs.3.20 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "32 kmpl",
+    "cc": "249 cc",
+    "power": "18.95 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Keeway",
+    "name": "Keeway K300 R",
+    "price": "Rs.2.65 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "32.30 kmpl",
+    "cc": "292.4 cc",
+    "power": "27.88 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Keeway",
+    "name": "Keeway Vieste 300",
+    "price": "Rs.3.25 Lakh*(View On Road Price)",
+    "rating": "3.9/5",
+    "mileage": "21.56 kmpl",
+    "cc": "278.2 cc",
+    "power": "18.95 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Keeway",
+    "name": "Keeway Sixties 300i",
+    "price": "Rs.3.30 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "27.73 kmpl",
+    "cc": "278.2 cc",
+    "power": "18.95 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Revolt",
+    "name": "Revolt RV400",
+    "price": "Rs.1.24 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "4.1 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Revolt",
+    "name": "Revolt RV1",
+    "price": "Rs.89,990 - 1.05 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "2.8 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Revolt",
+    "name": "Revolt RV BlazeX",
+    "price": "Rs.1.20 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "4.1 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Revolt",
+    "name": "Revolt RV400 BRZ",
+    "price": "Rs.1.14 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "3 kW",
+    "cc": "4.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Oben Electric",
+    "name": "Oben Rorr",
+    "price": "Rs.1.19 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "8 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Oben Electric",
+    "name": "Oben Rorr EZ",
+    "price": "Rs.89,999 - 1.20 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "7.5 kW",
+    "cc": "7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hero Electric",
+    "name": "Hero Electric Optima",
+    "price": "Rs.83,300 - 1.04 Lakh*(View On Road Price)",
+    "rating": "3.9/5",
+    "mileage": "1.2 kW",
+    "cc": "4.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hero Electric",
+    "name": "Hero Electric Flash",
+    "price": "Rs.59,640*(View On Road Price)",
+    "rating": "3.9/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hero Electric",
+    "name": "Hero Electric Atria",
+    "price": "Rs.77,690*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hero Electric",
+    "name": "Hero Electric Photon",
+    "price": "Rs.1.11 Lakh*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "1.8 kW",
+    "cc": "5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Vespa",
+    "name": "Vespa ZX",
+    "price": "Rs.1.17 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "45 kmpl",
+    "cc": "124.45 cc",
+    "power": "9.77 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Benelli",
+    "name": "Benelli TRK 502",
+    "price": "Rs.5.85 - 6.85 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "30.16 kmpl",
+    "cc": "500 cc",
+    "power": "47.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Benelli",
+    "name": "Benelli 502 C",
+    "price": "Rs.5.25 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "26.52 kmpl",
+    "cc": "500 cc",
+    "power": "47.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Benelli",
+    "name": "Benelli Leoncino 500",
+    "price": "Rs.4.99 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "23 kmpl",
+    "cc": "500 cc",
+    "power": "47.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Scout Bobber",
+    "price": "Rs.17.17 - 17.37 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "25 kmpl",
+    "cc": "1133 cc",
+    "power": "106.45 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Challenger Dark Horse",
+    "price": "Rs.36.97 - 37.07 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "18 kmpl",
+    "cc": "1768 cc",
+    "power": "122.5 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian FTR",
+    "price": "Rs.19.38 - 22.03 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "18 kmpl",
+    "cc": "1203 cc",
+    "power": "124.7 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Scout",
+    "price": "Rs.17.83 - 18.33 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "25 kmpl",
+    "cc": "1133 cc",
+    "power": "127.8 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Scout Rogue",
+    "price": "Rs.17.28 - 17.41 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "25 kmpl",
+    "cc": "1133 cc",
+    "power": "95.1 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Springfield",
+    "price": "Rs.32.73 - 33.05 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "20 kmpl",
+    "cc": "1890 cc",
+    "power": "171 Nm @ 3000 rpm",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Roadmaster Elite",
+    "price": "Rs.71.82 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "15 kmpl",
+    "cc": "1811 cc",
+    "power": "151 Nm @ 3000 rpm",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Chieftain Limited",
+    "price": "Rs.34.26 - 34.40 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "20 kmpl",
+    "cc": "1890 cc",
+    "power": "171 Nm @ 3000 rpm",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Chief Dark Horse",
+    "price": "Rs.22.13 - 22.25 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "20 kmpl",
+    "cc": "1890 cc",
+    "power": "122 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Super Chief Limited",
+    "price": "Rs.24.33 - 24.35 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "14 kmpl",
+    "cc": "1890 cc",
+    "power": "88 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Chief Bobber Dark Horse",
+    "price": "Rs.22.82 - 22.86 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "20 kmpl",
+    "cc": "1890 cc",
+    "power": "122 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Roadmaster",
+    "price": "Rs.43.49 - 46.77 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "20 kmpl",
+    "cc": "1890 cc",
+    "power": "74 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Springfield Dark Horse",
+    "price": "Rs.29.56 - 30.29 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "20 kmpl",
+    "cc": "1890 cc",
+    "power": "171 Nm @ 3000 rpm",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Chieftain Dark Horse",
+    "price": "Rs.32 - 33.87 Lakh*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "13.54 kmpl",
+    "cc": "1890 cc",
+    "power": "122 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Indian",
+    "name": "Indian Pursuit Limited",
+    "price": "Rs.42.03 - 47.37 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "14 kmpl",
+    "cc": "1768 cc",
+    "power": "122.36 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Okinawa",
+    "name": "Okinawa PraisePro",
+    "price": "Rs.84,443*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "1 kW",
+    "cc": "2-3 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okinawa",
+    "name": "Okinawa Dual 100",
+    "price": "Rs.1.19 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "2.5 kW",
+    "cc": "5-6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okinawa",
+    "name": "Okinawa Lite",
+    "price": "Rs.69,093*(View On Road Price)",
+    "rating": "3.9/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okinawa",
+    "name": "Okinawa iPraise+",
+    "price": "Rs.1.23 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "2.7 kW",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okinawa",
+    "name": "Okinawa Ridge",
+    "price": "Rs.70,096 - 1.15 Lakh*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "800 W",
+    "cc": "5-6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okinawa",
+    "name": "Okinawa R30",
+    "price": "Rs.61,998*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okinawa",
+    "name": "Okinawa Okhi90",
+    "price": "Rs.1.50 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "3.8 kW",
+    "cc": "5-6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ultraviolette",
+    "name": "Ultraviolette Tesseract",
+    "price": "Rs.1.20 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "14.91 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ultraviolette",
+    "name": "Ultraviolette F77",
+    "price": "Rs.2.99 - 3.99 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "30 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ultraviolette",
+    "name": "Ultraviolette F77 SuperStreet",
+    "price": "Rs.2.99 - 3.99 Lakh*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "30 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Benling India",
+    "name": "Benling Aura",
+    "price": "Rs.1.22 Lakh*(View On Road Price)",
+    "rating": "3.1/5",
+    "mileage": "3.2 kW",
+    "cc": "4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Benling India",
+    "name": "Benling Falcon",
+    "price": "Rs.69,540*(View On Road Price)",
+    "rating": "3.6/5",
+    "mileage": "250 W",
+    "cc": "4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Benling India",
+    "name": "Benling Kriti",
+    "price": "Rs.64,151*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "250 W",
+    "cc": "4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "PURE EV",
+    "name": "PURE EV Epluto 7G",
+    "price": "Rs.77,999 - 92,999*(View On Road Price)",
+    "rating": "3.2/5",
+    "mileage": "1.2 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "PURE EV",
+    "name": "PURE EV Epluto 7G Max",
+    "price": "Rs.1.15 Lakh*(View On Road Price)",
+    "rating": "3.4/5",
+    "mileage": "2.2 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "PURE EV",
+    "name": "PURE EV eTryst 350",
+    "price": "Rs.1.30 Lakh*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "4 kW",
+    "cc": "6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "PURE EV",
+    "name": "PURE EV ETrance Neo",
+    "price": "Rs.73,999 - 96,999*(View On Road Price)",
+    "rating": "2.8/5",
+    "mileage": "1.2 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "PURE EV",
+    "name": "PURE EV EcoDryft",
+    "price": "Rs.99,999 - 1.10 Lakh*(View On Road Price)",
+    "rating": "3.5/5",
+    "mileage": "3 kW",
+    "cc": "4-6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki X One",
+    "price": "Rs.35,999 - 59,999*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki Ranger",
+    "price": "Rs.1.86 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "5 kW",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki XGT CAT 2.0",
+    "price": "Rs.74,999 - 1.14 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki XGT KM",
+    "price": "Rs.56,890 - 93,045*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki Flora",
+    "price": "Rs.61,000*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "3 kW",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki XGT X5",
+    "price": "Rs.1 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki SE",
+    "price": "Rs.59,999 - 1.18 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki X3",
+    "price": "Rs.52,999*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "3 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki XR1",
+    "price": "Rs.29,999*(View On Road Price)",
+    "rating": "2.9/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki XGT X4",
+    "price": "Rs.1.02 - 1.24 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki LY",
+    "price": "Rs.74,844 - 1.07 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "3 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki X2 Vogue",
+    "price": "Rs.62,311 - 88,500*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki XGT Classic",
+    "price": "Rs.1.09 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki CAT 2.0 NXT",
+    "price": "Rs.74,999 - 99,500*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki Venice",
+    "price": "Rs.1.04 - 1.68 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "3 kW",
+    "cc": "5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki DT 3000",
+    "price": "Rs.1.12 Lakh*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "3 kW",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki XGT VP",
+    "price": "Rs.59,999 - 65,999*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki TN-95",
+    "price": "Rs.1.19 - 1.40 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "5 kW",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Komaki",
+    "name": "Komaki MX3",
+    "price": "Rs.1.15 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "EeVe",
+    "name": "EeVe Wind",
+    "price": "Rs.59,999*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "250 W",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "EeVe",
+    "name": "EeVe Ahava",
+    "price": "Rs.62,499*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "250 W",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "EeVe",
+    "name": "EeVe Soul",
+    "price": "Rs.1.20 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "1.2 kW",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "EeVe",
+    "name": "EeVe Xeniaa",
+    "price": "Rs.79,999 - 86,999*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hero Lectro",
+    "name": "Hero Lectro Muv-E",
+    "price": "Rs.61,999*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hero Lectro",
+    "name": "Hero Lectro WINN",
+    "price": "Rs.49,999*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "250 W",
+    "cc": "7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hero Lectro",
+    "name": "Hero Lectro H7",
+    "price": "Rs.33,499 - 40,999*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "250 W",
+    "cc": "5.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hero Lectro",
+    "name": "Hero Lectro H4",
+    "price": "Rs.32,499 - 35,499*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "250 W",
+    "cc": "4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hero Lectro",
+    "name": "Hero Lectro H5",
+    "price": "Rs.26,999 - 31,999*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "250 W",
+    "cc": "2.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hero Lectro",
+    "name": "Hero Lectro F6i",
+    "price": "Rs.60,999*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "250 W",
+    "cc": "6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hero Lectro",
+    "name": "Hero Lectro WINN-X",
+    "price": "Rs.49,999*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "250 W",
+    "cc": "8 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hero Lectro",
+    "name": "Hero Lectro H3",
+    "price": "Rs.27,999 - 30,999*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "250 W",
+    "cc": "2.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "BattRE Electric Mobility",
+    "name": "BattRE Electric LoEV",
+    "price": "Rs.59,900 - 1.03 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "2.5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "BattRE Electric Mobility",
+    "name": "BattRE Electric Storie",
+    "price": "Rs.94,999 - 1.15 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "2.4 kW",
+    "cc": "5.2 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "BattRE Electric Mobility",
+    "name": "BattRE Electric ONE",
+    "price": "Rs.73,900 - 1.08 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "2.5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Joy e-bike",
+    "name": "Joy e-bike Gen Next Nanu",
+    "price": "Rs.56,699 - 67,304*(View On Road Price)",
+    "rating": "3.0/5",
+    "mileage": "1 kW",
+    "cc": "5-5.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Joy e-bike",
+    "name": "Joy e-bike Beast",
+    "price": "Rs.2.42 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "5 kW",
+    "cc": "9 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Joy e-bike",
+    "name": "Joy e-bike Wolf",
+    "price": "Rs.57,749 - 68,354*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "1 kW",
+    "cc": "5-5.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Joy e-bike",
+    "name": "Joy e-bike Glob",
+    "price": "Rs.70,000*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "250 W",
+    "cc": "3.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Joy e-bike",
+    "name": "Joy e-bike Gen Next Nanu Plus",
+    "price": "Rs.73,604*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "1.5 kW",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Joy e-bike",
+    "name": "Joy e-bike Mihos",
+    "price": "Rs.1.13 Lakh*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "1.5 kW",
+    "cc": "5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Joy e-bike",
+    "name": "Joy e-bike Hurricane",
+    "price": "Rs.2.33 Lakh*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "5 kW",
+    "cc": "8 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Joy e-bike",
+    "name": "Joy e-bike Wolf Plus",
+    "price": "Rs.74,654*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "1.5 kW",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Joy e-bike",
+    "name": "Joy e-bike Thunderbolt",
+    "price": "Rs.2.33 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "5 kW",
+    "cc": "9 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "BGauss",
+    "name": "Bgauss C12i",
+    "price": "Rs.1.05 - 1.35 Lakh*(View On Road Price)",
+    "rating": "3.9/5",
+    "mileage": "2.5 kW",
+    "cc": "4.15-4.3 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "BGauss",
+    "name": "BGauss RUV 350",
+    "price": "Rs.1.15 - 1.40 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "3.5 kW",
+    "cc": "6.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ujaas Energy",
+    "name": "Ujaas eGo LA",
+    "price": "Rs.39,880*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "250 W",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ujaas Energy",
+    "name": "Ujaas eSpa LA",
+    "price": "Rs.48,174*(View On Road Price)",
+    "rating": "4.9/5",
+    "mileage": "250 W",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ujaas Energy",
+    "name": "Ujaas eGo T3",
+    "price": "Rs.59,724 - 70,224*(View On Road Price)",
+    "rating": "3.9/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ujaas Energy",
+    "name": "Ujaas eSpa Li",
+    "price": "Rs.54,880*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ujaas Energy",
+    "name": "Ujaas eGo Li",
+    "price": "Rs.53,880*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "ADMS",
+    "name": "ADMS Mantra",
+    "price": "Rs.98,000*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "1.2 kW",
+    "cc": "4-8 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "ADMS",
+    "name": "ADMS GTR",
+    "price": "Rs.79,800*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "1 kW",
+    "cc": "4-8 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "ADMS",
+    "name": "ADMS EVA",
+    "price": "Rs.1.35 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "2.5 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "ADMS",
+    "name": "ADMS Phantom",
+    "price": "Rs.1.33 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "2 kW",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "ADMS",
+    "name": "ADMS Marvel",
+    "price": "Rs.97,000*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "ADMS",
+    "name": "ADMS DB",
+    "price": "Rs.1.33 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "1.2 kW",
+    "cc": "4-8 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "ADMS",
+    "name": "ADMS TTX",
+    "price": "Rs.1.15 Lakh*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "250 W",
+    "cc": "4-8 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "AMO Electric",
+    "name": "AMO Electric Jaunty-3W",
+    "price": "Rs.81,669*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "249 W",
+    "cc": "6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "AMO Electric",
+    "name": "AMO Electric Jaunty",
+    "price": "Rs.62,964 - 90,064*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "249 W",
+    "cc": "6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "AMO Electric",
+    "name": "AMO Electric Brisk",
+    "price": "Rs.62,913*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "249 W",
+    "cc": "6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "AMO Electric",
+    "name": "AMO Electric Inspirer",
+    "price": "Rs.53,951 - 86,626*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "249 W",
+    "cc": "6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "AMO Electric",
+    "name": "AMO Electric Jaunty Plus",
+    "price": "Rs.1.08 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "1.27 kW",
+    "cc": "4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "AMO Electric",
+    "name": "AMO Electric Jaunty Pro",
+    "price": "Rs.69,256*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "249 W",
+    "cc": "6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Aeroride",
+    "name": "Aeroride YB2000",
+    "price": "Rs.97,100 - 1.30 Lakh*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Aftek Motors",
+    "name": "Aftek Elmo",
+    "price": "Rs.1.10 Lakh*(View On Road Price)",
+    "rating": "1.0/5",
+    "mileage": "3 kW",
+    "cc": "4.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ampere Electric",
+    "name": "Ampere Magnus EX",
+    "price": "Rs.84,900*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "2.1 kW",
+    "cc": "5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ampere Electric",
+    "name": "Ampere Magnus Neo",
+    "price": "Rs.79,999*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "1.5 kW",
+    "cc": "5-6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ampere Electric",
+    "name": "Ampere Nexus",
+    "price": "Rs.1.15 - 1.25 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "3.3 kW",
+    "cc": "3.3 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ampere Electric",
+    "name": "Ampere Reo",
+    "price": "Rs.49,900 - 59,900*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "250 W",
+    "cc": "5.3 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ampere Electric",
+    "name": "Ampere Primus",
+    "price": "Rs.1.20 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "3.4 kW",
+    "cc": "5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ampere Electric",
+    "name": "Ampere Zeal EX",
+    "price": "Rs.86,690*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "1.8 kW",
+    "cc": "5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Atumobile",
+    "name": "Atumobile Atum Version 1.0",
+    "price": "Rs.61,500*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Atumobile",
+    "name": "Atumobile AtumVader",
+    "price": "Rs.1.09 - 1.39 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "3 kW",
+    "cc": "4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "BNC Motors",
+    "name": "BNC Motors Challenger",
+    "price": "Rs.99,900 - 1.45 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "3 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "BSA",
+    "name": "BSA Gold Star",
+    "price": "Rs.3.10 - 3.45 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "25 kmpl",
+    "cc": "652 cc",
+    "power": "45.62 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Bounce",
+    "name": "Bounce Infinity E.1",
+    "price": "Rs.59,000 - 1.26 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "2.2 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Brixton Motorcycles",
+    "name": "Brixton Cromwell 1200",
+    "price": "Rs.7.84 - 9.11 Lakh*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "21.7 kmpl",
+    "cc": "1222 cc",
+    "power": "83 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Brixton Motorcycles",
+    "name": "Brixton Crossfire 500",
+    "price": "Rs.4.74 - 5.19 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "25 kmpl",
+    "cc": "486 cc",
+    "power": "47.58 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "CFMoto",
+    "name": "CFMoto 650MT",
+    "price": "Rs.5.29 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "20 kmpl",
+    "cc": "649 cc",
+    "power": "70.70 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "CFMoto",
+    "name": "CFMoto 650GT",
+    "price": "Rs.5.59 Lakh*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "20 kmpl",
+    "cc": "649.3 cc",
+    "power": "62.54 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "CFMoto",
+    "name": "CFMoto 300NK",
+    "price": "Rs.2.29 Lakh*(View On Road Price)",
+    "rating": "3.6/5",
+    "mileage": "33 kmpl",
+    "cc": "292.4 cc",
+    "power": "33.99 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "CFMoto",
+    "name": "CFMoto 650NK",
+    "price": "Rs.4.29 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "20 kmpl",
+    "cc": "649.3 cc",
+    "power": "61.18 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Crayon Motors",
+    "name": "Crayon Zeez",
+    "price": "Rs.51,760 - 64,075*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "250 W",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "DAO",
+    "name": "DAO Zor 405",
+    "price": "Rs.89,184 - 1.19 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "250 W",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "DAO",
+    "name": "DAO Model 703",
+    "price": "Rs.99,999*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "2.5 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "DAO",
+    "name": "DAO Vidyut 108",
+    "price": "Rs.86,449*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "250 W",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Deltic",
+    "name": "Deltic Drixx",
+    "price": "Rs.64,990 - 91,990*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Deltic",
+    "name": "Deltic Legion",
+    "price": "Rs.69,490 - 95,990*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Deltic",
+    "name": "Deltic ZGS",
+    "price": "Rs.1.02 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "2 kW",
+    "cc": "5-6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Deltic",
+    "name": "Deltic Trento",
+    "price": "Rs.1.28 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "3 kW",
+    "cc": "5-6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "E-Went",
+    "name": "E-Went Rabbitor",
+    "price": "Rs.60,100 - 83,000*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "EMotorad",
+    "name": "EMotorad X2",
+    "price": "Rs.27,999*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "EMotorad",
+    "name": "EMotorad X3",
+    "price": "Rs.34,999*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "EMotorad",
+    "name": "EMotorad Doodle",
+    "price": "Rs.49,999 - 52,999*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "250 W",
+    "cc": "5-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "EMotorad",
+    "name": "EMotorad Neo",
+    "price": "Rs.25,999*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "EMotorad",
+    "name": "EMotorad X1",
+    "price": "Rs.24,999 - 27,999*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "EMotorad",
+    "name": "EMotorad Legend O7",
+    "price": "Rs.29,999*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "EMotorad",
+    "name": "EMotorad T-Rex Air",
+    "price": "Rs.34,999*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "EMotorad",
+    "name": "EMotorad EMX",
+    "price": "Rs.54,999*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "250 W",
+    "cc": "5-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Elecson",
+    "name": "Elecson Folding",
+    "price": "Rs.24,999 - 25,499*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "350 W",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Elecson",
+    "name": "Elecson Ladybird",
+    "price": "Rs.27,499*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "250 W",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Elecson",
+    "name": "Elecson Eco",
+    "price": "Rs.18,499*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "250 W",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Enigma",
+    "name": "Enigma Ambier N8",
+    "price": "Rs.95,000 - 1.05 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "1.5 kW",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Essel Energy",
+    "name": "Essel Energy GET 1",
+    "price": "Rs.37,500 - 41,500*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "250 W",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Essel Energy",
+    "name": "Essel Energy GET 1+",
+    "price": "Rs.81,314 - 86,930*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "250 W",
+    "cc": "5-6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Essel Energy",
+    "name": "Essel Energy Wind",
+    "price": "Rs.54,600 - 73,650*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "250 W",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Fidato Evtech",
+    "name": "Fidato Evtech Easy Go",
+    "price": "Rs.86,315*(View On Road Price)",
+    "rating": "2.9/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Fidato Evtech",
+    "name": "Fidato Evtech Cutie",
+    "price": "Rs.54,600*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "3-4 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Fidato Evtech",
+    "name": "Fidato Evtech Future 2020",
+    "price": "Rs.70,300*(View On Road Price)",
+    "rating": "3.5/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Flycon Motors",
+    "name": "Flycon Empire +",
+    "price": "Rs.89,999 - 1.33 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "3-4 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Flycon Motors",
+    "name": "Flycon Empire",
+    "price": "Rs.79,900*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "3-4 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Flycon Motors",
+    "name": "Flycon Grove",
+    "price": "Rs.74,629 - 80,957*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "6-7 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Fujiyama",
+    "name": "Fujiyama Spectra",
+    "price": "Rs.51,528 - 77,119*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "250 W",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Fujiyama",
+    "name": "Fujiyama Ozone",
+    "price": "Rs.99,918*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "3.7 kW",
+    "cc": "5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Fujiyama",
+    "name": "Fujiyama Spectra Pro",
+    "price": "Rs.54,384 - 79,975*(View On Road Price)",
+    "rating": "2.8/5",
+    "mileage": "250 W",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GT Force",
+    "name": "GT One Plus Pro",
+    "price": "Rs.76,999*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GT Force",
+    "name": "GT RYD Plus",
+    "price": "Rs.68,999*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GT Force",
+    "name": "GT Drive Pro",
+    "price": "Rs.85,999*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GT Force",
+    "name": "GT Texa",
+    "price": "Rs.1.20 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GT Force",
+    "name": "GT Vegas",
+    "price": "Rs.57,999*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Gaura Electric",
+    "name": "Gaura Warrior 5G",
+    "price": "Rs.62,999 - 99,990*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GoBike",
+    "name": "GoBike E-Smart",
+    "price": "Rs.71,780 - 1.04 Lakh*(View On Road Price)",
+    "rating": "3.2/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GoBike",
+    "name": "GoBike KN1 Plus",
+    "price": "Rs.1.36 Lakh*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GoBike",
+    "name": "GoBike DMG",
+    "price": "Rs.2.37 - 3.05 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GoBike",
+    "name": "GoBike Ambition",
+    "price": "Rs.73,817 - 1.08 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GoBike",
+    "name": "GoBike Electro",
+    "price": "Rs.76,109 - 1.10 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GoBike",
+    "name": "GoBike V6",
+    "price": "Rs.1.60 - 2.28 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GoBike",
+    "name": "GoBike DMS",
+    "price": "Rs.1.63 - 2.31 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GoBike",
+    "name": "GoBike A 1-4",
+    "price": "Rs.1.60 - 2.28 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GoBike",
+    "name": "GoBike XL",
+    "price": "Rs.1.52 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "GoBike",
+    "name": "GoBike JF",
+    "price": "Rs.1.63 - 2.31 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hayasa",
+    "name": "Hayasa Nirbhar",
+    "price": "Rs.65,550*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "230 W",
+    "cc": "4-4.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hayasa",
+    "name": "Hayasa Daksha",
+    "price": "Rs.74,050*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "230 W",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hayasa",
+    "name": "Hayasa Ira",
+    "price": "Rs.76,750*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "230 W",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hayasa",
+    "name": "Hayasa Ojas",
+    "price": "Rs.80,550*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "230 W",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Herald",
+    "name": "Herald Legend",
+    "price": "Rs.89,410 - 1.24 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "2 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Herald",
+    "name": "Herald Rider",
+    "price": "Rs.87,660*(View On Road Price)",
+    "rating": "3.5/5",
+    "mileage": "2 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Herald",
+    "name": "Herald Royal",
+    "price": "Rs.91,150 - 1.23 Lakh*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "3 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hop Electric",
+    "name": "Hop Electric LEO",
+    "price": "Rs.84,360 - 97,504*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "2.5 kW",
+    "cc": "3.15 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Hop Electric",
+    "name": "Hop Oxo",
+    "price": "Rs.1.28 - 1.61 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "4.2 kW",
+    "cc": "4.45 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "JHEV",
+    "name": "JHEV Delta R3",
+    "price": "Rs.1.70 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "3 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "JHEV",
+    "name": "JHEV Alfa R5",
+    "price": "Rs.1.12 Lakh*(View On Road Price)",
+    "rating": "3.1/5",
+    "mileage": "2 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "JHEV",
+    "name": "JHEV Alfa R3",
+    "price": "Rs.1.25 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "3 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "JHEV",
+    "name": "JHEV Alfa R1",
+    "price": "Rs.89,999*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "2 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "JHEV",
+    "name": "JHEV Alfa K1",
+    "price": "Rs.1.25 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "3 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "JHEV",
+    "name": "JHEV Delta V6",
+    "price": "Rs.1.52 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "3 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "JHEV",
+    "name": "JHEV Delta E5",
+    "price": "Rs.1.46 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "3 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Jitendra EV",
+    "name": "Jitendra JMT 1000HS",
+    "price": "Rs.99,999*(View On Road Price)",
+    "rating": "3.2/5",
+    "mileage": "1 kW",
+    "cc": "3.5-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Jitendra EV",
+    "name": "Jitendra JMT 1000HS 26",
+    "price": "Rs.89,000*(View On Road Price)",
+    "rating": "3.2/5",
+    "mileage": "1 kW",
+    "cc": "3.5-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Jitendra EV",
+    "name": "Jitendra JMT 1000 3K",
+    "price": "Rs.1.22 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "1 kW",
+    "cc": "4-4.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kabira Mobility",
+    "name": "Kabira Mobility KM3000",
+    "price": "Rs.1.63 - 1.74 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "5 kW",
+    "cc": "3.2 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kabira Mobility",
+    "name": "Kabira Mobility KM4000",
+    "price": "Rs.1.66 - 1.76 Lakh*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "5 kW",
+    "cc": "3.2 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kabira Mobility",
+    "name": "Kabira Hermes 75",
+    "price": "Rs.90,825*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "2.5 kW",
+    "cc": "4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kinetic Green",
+    "name": "Kinetic Green E Luna",
+    "price": "Rs.69,990 - 82,490*(View On Road Price)",
+    "rating": "3.9/5",
+    "mileage": "2.2 kW",
+    "cc": "5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kinetic Green",
+    "name": "Kinetic Green Zing",
+    "price": "Rs.67,990 - 75,990*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kinetic Green",
+    "name": "Kinetic Green Zoom",
+    "price": "Rs.71,531 - 78,776*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kinetic Green",
+    "name": "Kinetic Green Flex",
+    "price": "Rs.1.10 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "1.2 kW",
+    "cc": "3 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kinetic Green",
+    "name": "Kinetic Green Zulu",
+    "price": "Rs.79,990*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "2.1 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Kyte Energy",
+    "name": "Kyte Energy Magnum",
+    "price": "Rs.64,360 - 74,360*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "2.4 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Lectrix EV",
+    "name": "Lectrix NDuro",
+    "price": "Rs.57,999 - 99,999*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Lectrix EV",
+    "name": "Lectrix EV LXS G 2.0",
+    "price": "Rs.99,999*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "1.8 kW",
+    "cc": "3 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Lectrix EV",
+    "name": "Lectrix EV LXS 2.0 Subscription",
+    "price": "Rs.49,999*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "1.2 kW",
+    "cc": "5-6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Lectrix EV",
+    "name": "Lectrix EV SX25",
+    "price": "Rs.54,999 - 67,999*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "250 W",
+    "cc": "7-8 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Lectrix EV",
+    "name": "Lectrix EV LXS",
+    "price": "Rs.91,399*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "1.9 kW",
+    "cc": "2.5-3 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Lectrix EV",
+    "name": "Lectrix LXS 2.0",
+    "price": "Rs.89,990*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "1.2 kW",
+    "cc": "3 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Lectrix EV",
+    "name": "Lectrix EV LXS 3.0",
+    "price": "Rs.1.02 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "1.2 kW",
+    "cc": "3.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "MX Moto",
+    "name": "MX Moto M16",
+    "price": "Rs.1.98 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "4 kW",
+    "cc": "5-6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "MX Moto",
+    "name": "MX Moto MX9",
+    "price": "Rs.1.46 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "4 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "MX Moto",
+    "name": "MX Moto MXV",
+    "price": "Rs.84,999 - 94,999*(View On Road Price)",
+    "rating": "1.0/5",
+    "mileage": "3 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Maruthisan",
+    "name": "Maruthisan Dream+",
+    "price": "Rs.1.63 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Maruthisan",
+    "name": "Maruthisan Beat",
+    "price": "Rs.1.70 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Maruthisan",
+    "name": "Maruthisan Racer",
+    "price": "Rs.1.93 Lakh*(View On Road Price)",
+    "rating": "4.9/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Maruthisan",
+    "name": "Maruthisan MS 3.0",
+    "price": "Rs.1.49 - 1.58 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Moto Morini",
+    "name": "Moto Morini SEIEMMEZZO 6 ½",
+    "price": "Rs.4.99 - 5.20 Lakh*(View On Road Price)",
+    "rating": "3.5/5",
+    "mileage": "22 kmpl",
+    "cc": "649 cc",
+    "power": "55.7 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Moto Morini",
+    "name": "Moto Morini X-Cape",
+    "price": "Rs.5.99 - 6.49 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "23.92 kmpl",
+    "cc": "649 cc",
+    "power": "60.83 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Motovolt",
+    "name": "Motovolt M7",
+    "price": "Rs.1.23 Lakh*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "1.5 kW",
+    "cc": "4.5-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "NIJ Automotive",
+    "name": "NIJ Automotive Accelero R14",
+    "price": "Rs.49,731 - 73,326*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "NIJ Automotive",
+    "name": "NIJ Automotive Accelero X-Pro",
+    "price": "Rs.58,100 - 1.10 Lakh*(View On Road Price)",
+    "rating": "4.9/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "NIJ Automotive",
+    "name": "NIJ Automotive Accelero Plus",
+    "price": "Rs.55,200 - 77,625*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Nexzu",
+    "name": "Nexzu Roadlark",
+    "price": "Rs.32,950 - 41,700*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "250 W",
+    "cc": "6.5-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Nexzu",
+    "name": "Nexzu Rompus Plus",
+    "price": "Rs.29,900*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "250 W",
+    "cc": "2.5-3 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Nexzu",
+    "name": "Nexzu Bazinga",
+    "price": "Rs.32,950 - 41,700*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "250 W",
+    "cc": "6.5-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Odysse Electric",
+    "name": "Odysse Electric V2",
+    "price": "Rs.77,250 - 1 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "250 W",
+    "cc": "3.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Odysse Electric",
+    "name": "Odysse Electric Evoqis",
+    "price": "Rs.1.18 - 1.71 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Odysse Electric",
+    "name": "Odysse Electric E2Go",
+    "price": "Rs.71,100 - 94,100*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "4 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Odysse Electric",
+    "name": "Odysse Electric Hawk",
+    "price": "Rs.99,400 - 1.18 Lakh*(View On Road Price)",
+    "rating": "3.9/5",
+    "mileage": "1.8 kW",
+    "cc": "3.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Odysse Electric",
+    "name": "Odysse Electric VADER",
+    "price": "Rs.1.62 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "4 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okaya Electric",
+    "name": "Okaya Ferrato Disruptor",
+    "price": "Rs.1.60 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "3.3 kW",
+    "cc": "5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okaya Electric",
+    "name": "Okaya Freedum",
+    "price": "Rs.49,999*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "250 W",
+    "cc": "5-6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okaya Electric",
+    "name": "Okaya Faast",
+    "price": "Rs.1.05 - 1.10 Lakh*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "2.5 kW",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okaya Electric",
+    "name": "Okaya Faast F2B",
+    "price": "Rs.89,999*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "2.5 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okaya Electric",
+    "name": "Okaya Motofaast",
+    "price": "Rs.1.34 Lakh*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "1 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okaya Electric",
+    "name": "Okaya Faast F2F",
+    "price": "Rs.79,999*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "800 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okaya Electric",
+    "name": "Okaya ClassIQ",
+    "price": "Rs.59,999*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Okaya Electric",
+    "name": "Okaya Faast F2T",
+    "price": "Rs.89,999*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "1.2 kW",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ozotec",
+    "name": "Ozotec Flio",
+    "price": "Rs.84,990 - 1.33 Lakh*(View On Road Price)",
+    "rating": "3.1/5",
+    "mileage": "6 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Ozotec",
+    "name": "Ozotec Bheem",
+    "price": "Rs.89,990*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "3 kW",
+    "cc": "4.5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Polarity Smart",
+    "name": "Polarity Smart Sport",
+    "price": "Rs.40,000 - 1.10 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "3 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Polarity Smart",
+    "name": "Polarity Smart Executive",
+    "price": "Rs.38,000 - 1.05 Lakh*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "2.5 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "QJ Motor",
+    "name": "QJ Motor SRK 400",
+    "price": "Rs.3.59 - 3.69 Lakh*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "20.6 kmpl",
+    "cc": "400 cc",
+    "power": "41.46 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "QJ Motor",
+    "name": "QJ Motor SRC 500",
+    "price": "Rs.1.99 Lakh*(View On Road Price)",
+    "rating": "3.5/5",
+    "mileage": "30 kmpl",
+    "cc": "480 cc",
+    "power": "25.85 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "QJ Motor",
+    "name": "QJ Motor SRC 250",
+    "price": "Rs.1.49 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "50 kmpl",
+    "cc": "249 cc",
+    "power": "17.64 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "QJ Motor",
+    "name": "QJ Motor SRV 300",
+    "price": "Rs.3.19 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "35 kmpl",
+    "cc": "296 cc",
+    "power": "30.72 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Quantum Energy",
+    "name": "Quantum BZiness",
+    "price": "Rs.96,499 - 1.20 Lakh*(View On Road Price)",
+    "rating": "3.4/5",
+    "mileage": "1.2 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Quantum Energy",
+    "name": "Quantum Plasma",
+    "price": "Rs.89,095 - 1.25 Lakh*(View On Road Price)",
+    "rating": "3.9/5",
+    "mileage": "1.5 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Quantum Energy",
+    "name": "Quantum Milan",
+    "price": "Rs.89,000*(View On Road Price)",
+    "rating": "3.9/5",
+    "mileage": "1 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Raftaar",
+    "name": "Raftaar Cruzer R1",
+    "price": "Rs.84,500*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Raftaar",
+    "name": "Raftaar Bumblebee",
+    "price": "Rs.88,000*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Raftaar",
+    "name": "Raftaar Electrica",
+    "price": "Rs.48,540 - 70,900*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Raftaar",
+    "name": "Raftaar Galaxy",
+    "price": "Rs.51,900*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Rowwet",
+    "name": "Rowwet Rame",
+    "price": "Rs.1.15 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "2 kW",
+    "cc": "3 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Rowwet",
+    "name": "Rowwet Trono",
+    "price": "Rs.1.81 Lakh*(View On Road Price)",
+    "rating": "3.8/5",
+    "mileage": "3 kW",
+    "cc": "3 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "SVITCH BIKE",
+    "name": "SVITCH CSR 762",
+    "price": "Rs.1.90 Lakh*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "3 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Seeka",
+    "name": "Seeka SBolt",
+    "price": "Rs.1.69 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "3 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Seeka",
+    "name": "Seeka SSeagun",
+    "price": "Rs.1.52 Lakh*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "4 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Shema E-Vehicle",
+    "name": "Shema Eagle",
+    "price": "Rs.64,999 - 1.17 Lakh*(View On Road Price)",
+    "rating": "3.0/5",
+    "mileage": "1.2 kW",
+    "cc": "6 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Shema E-Vehicle",
+    "name": "Shema Tuff",
+    "price": "Rs.79,655 - 1.40 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "1.5 kW",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Shema E-Vehicle",
+    "name": "Shema Bold",
+    "price": "Rs.82,200*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "250 W",
+    "cc": "5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Sokudo",
+    "name": "Sokudo Acute",
+    "price": "Rs.89,889 - 1.05 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "3 kW",
+    "cc": "4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Sokudo",
+    "name": "Sokudo Plus",
+    "price": "Rs.59,889*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "5-6 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Sokudo",
+    "name": "Sokudo Select",
+    "price": "Rs.86,889*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "2.3 kW",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Tunwal",
+    "name": "Tunwal Strom Advance 2",
+    "price": "Rs.1.35 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "250 W",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Tunwal",
+    "name": "Tunwal Mini Sports 63",
+    "price": "Rs.49,990*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "250 W",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Tunwal",
+    "name": "Tunwal Mini Lithino",
+    "price": "Rs.54,990*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "250 W",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Tunwal",
+    "name": "Tunwal Roma",
+    "price": "Rs.95,000*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "250 W",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Tunwal",
+    "name": "Tunwal Storm ZX",
+    "price": "Rs.90,000*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "250 W",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Tunwal",
+    "name": "Tunwal TZ",
+    "price": "Rs.1.15 Lakh*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "250 W",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Tunwal",
+    "name": "Tunwal Sport",
+    "price": "Rs.71,990*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": null,
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Tunwal",
+    "name": "Tunwal Lithino Li",
+    "price": "Rs.74,990*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "250 W",
+    "cc": "4-5 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Tunwal",
+    "name": "Tunwal Strom Advance 1",
+    "price": "Rs.1.15 Lakh*(View On Road Price)",
+    "rating": "3.0/5",
+    "mileage": "250 W",
+    "cc": "6-7 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Warivo Motors",
+    "name": "Warivo Motors Nexa",
+    "price": "Rs.58,300 - 74,300*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "5-8 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Warivo Motors",
+    "name": "Warivo CRX",
+    "price": "Rs.79,999*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "1.5 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "YObykes",
+    "name": "Yo Drift DX",
+    "price": "Rs.65,000 - 70,000*(View On Road Price)",
+    "rating": "4.5/5",
+    "mileage": "250 W",
+    "cc": "10 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Yezdi",
+    "name": "Yezdi Roadster",
+    "price": "Rs.2.06 - 2.13 Lakh*(View On Road Price)",
+    "rating": "4.2/5",
+    "mileage": "28.53 kmpl",
+    "cc": "334 cc",
+    "power": "29 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yezdi",
+    "name": "Yezdi Adventure",
+    "price": "Rs.2.10 - 2.20 Lakh*(View On Road Price)",
+    "rating": "4.3/5",
+    "mileage": "33.07 kmpl",
+    "cc": "334 cc",
+    "power": "29.6 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Yezdi",
+    "name": "Yezdi Scrambler",
+    "price": "Rs.2.10 - 2.16 Lakh*(View On Road Price)",
+    "rating": "4.1/5",
+    "mileage": "32.04 kmpl",
+    "cc": "334 cc",
+    "power": "29.77 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Zelio",
+    "name": "Zelio Little Gracy",
+    "price": "Rs.49,500 - 58,000*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "7-8 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Zelio",
+    "name": "Zelio Gracy i",
+    "price": "Rs.59,273 - 82,273*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "9-10 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Zelio",
+    "name": "Zelio Eeva",
+    "price": "Rs.56,051 - 79,051*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Zelio",
+    "name": "Zelio X Men 2.0",
+    "price": "Rs.69,499 - 91,500*(View On Road Price)",
+    "rating": "4.6/5",
+    "mileage": "4-5 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Zelio",
+    "name": "Zelio Eeva Eco",
+    "price": "Rs.49,500 - 68,000*(View On Road Price)",
+    "rating": "4.8/5",
+    "mileage": "8-9 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Zelo",
+    "name": "Zelo Zoop",
+    "price": "Rs.45,900 - 86,900*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "3 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Zelo",
+    "name": "Zelo Knight",
+    "price": "Rs.49,900 - 91,900*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "3 Hr",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "Zontes",
+    "name": "Zontes 350R",
+    "price": "Rs.2.79 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "40 kmpl",
+    "cc": "348 cc",
+    "power": "38.52 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Zontes",
+    "name": "Zontes GK350",
+    "price": "Rs.3.37 - 3.47 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "31.25 kmpl",
+    "cc": "348 cc",
+    "power": "38.52 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Zontes",
+    "name": "Zontes 350T",
+    "price": "Rs.2.99 Lakh*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "23 kmpl",
+    "cc": "348 cc",
+    "power": "39.33 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "Zontes",
+    "name": "Zontes 350X",
+    "price": "Rs.2.99 Lakh*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "36 kmpl",
+    "cc": "348 cc",
+    "power": "39.33 PS",
+    "type": "bike"
+  },
+  {
+    "brand": "e-Sprinto",
+    "name": "e-Sprinto LS",
+    "price": "Rs.76,000 - 82,000*(View On Road Price)",
+    "rating": "4.0/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "e-Sprinto",
+    "name": "e-Sprinto Roamy",
+    "price": "Rs.54,999*(View On Road Price)",
+    "rating": "3.7/5",
+    "mileage": "250 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "e-Sprinto",
+    "name": "Sprinto HS",
+    "price": "Rs.86,000 - 97,000*(View On Road Price)",
+    "rating": "5.0/5",
+    "mileage": "800 W",
+    "cc": "3-4 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "iVOOMi",
+    "name": "iVOOMi Jeet X",
+    "price": "Rs.84,999 - 1.05 Lakh*(View On Road Price)",
+    "rating": "4.7/5",
+    "mileage": "2.1 kW",
+    "cc": "5.45 Hr",
+    "power": null,
+    "type": "bike"
+  },
+  {
+    "brand": "iVOOMi",
+    "name": "iVOOMi S1",
+    "price": "Rs.54,999 - 84,999*(View On Road Price)",
+    "rating": "4.4/5",
+    "mileage": "1.8 kW",
+    "cc": null,
+    "power": null,
+    "type": "bike"
+  }
+]
