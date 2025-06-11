@@ -12,7 +12,7 @@ def list_files(dir: str) -> list[str]:
     return full_paths
 
 
-MAX_FILE_CONTENT_LENGTH = 10000  # Max characters for file content
+MAX_FILE_CONTENT_LENGTH = 100  # Max characters for file content
 
 def read_pdf(file_path: str) -> dict:
     with PdfReader(file_path) as file:

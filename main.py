@@ -87,15 +87,29 @@ async def main():
 
     # Example 1: SQL query
     sql_query_result = await master_agent.run(
-        "List all tables in the database.",
+        "Show me how many albums each artist has",
+        deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
+    )
+
+    # Example 2: File reading
+    file_read_result = await master_agent.run(
+        "What is in the bike data?",
+        deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
+    )
+
+    # Example 3: Ambiguous request (should ideally go to SQL if it mentions "data" and "tables")
+    ambiguous_result = await master_agent.run(
+        "For customers located in the USA, find the total sales amount for each customer. What is about risc?",
         deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
     )
     
-    return sql_query_result
+    return sql_query_result, file_read_result, ambiguous_result
 # Example usage (for testing purposes)
 if __name__ == "__main__":
-    sql_response = asyncio.run(main())
-    print(sql_response.output)
+    sql_response, file_read_response, generic_result = asyncio.run(main())
+    # print(sql_response.output)
+    # print(file_read_response.output)
+    print(generic_result)
 
     # # Example 2: File reading
     # file_read_result = master_agent.run(

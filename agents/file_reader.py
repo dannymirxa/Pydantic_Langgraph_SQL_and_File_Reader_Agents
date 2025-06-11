@@ -54,7 +54,7 @@ Available tools:
 - read_pdf_tool(file_path: str): Use this for .pdf files.
 
 Example 1: If the user says "I want the content of the bike data", and 'files/structured_bike_data_cleaned.json' is in the list, you should call read_json_tool('files/structured_bike_data_cleaned.json').
-Example 2: If the user says "I t oknow more about risc", and 'files/risc.txt' is in the list, you should call read_txt_tool('files/risc.txt').
+Example 2: If the user says "I need to know more about risc", and 'files/risc.txt' is in the list, you should call read_txt_tool('files/risc.txt').
 """
 
 @file_reader_agent.tool
