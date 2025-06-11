@@ -1,0 +1,12 @@
+{
+    "request": "Need to know about total album sales by genre",
+    "files": [
+        "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files/ai_job_dataset.csv",
+        "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files/risc.txt",
+        "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files/Specific Agents Versus Generality.pdf",
+        "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files/structured_bike_data_cleaned.json"
+    ],
+    "agent": "sql_agent",
+    "sql_query": "SELECT g.name AS genre, SUM(il.unit_price * il.quantity) AS total_sales \nFROM genre g \nJOIN track t ON g.genre_id = t.genre_id \nJOIN invoice_line il ON t.track_id = il.track_id \nGROUP BY g.name \nORDER BY total_sales DESC",
+    "detail": "SELECT g.name AS genre, SUM(il.unit_price * il.quantity) AS total_sales \nFROM genre g \nJOIN track t ON g.genre_id = t.genre_id \nJOIN invoice_line il ON t.track_id = il.track_id \nGROUP BY g.name \nORDER BY total_sales DESC"
+}
