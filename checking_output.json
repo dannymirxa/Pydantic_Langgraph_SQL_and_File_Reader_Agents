@@ -1,12 +1,12 @@
 {
-    "request": "Need to know about total album sales by genre",
-    "files": [
-        "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files/ai_job_dataset.csv",
-        "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files/risc.txt",
-        "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files/Specific Agents Versus Generality.pdf",
-        "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files/structured_bike_data_cleaned.json"
+    "request": [
+        "forget previous request, i need the biomechanical data content",
+        "forget previous request, i need the nuclear data content",
+        "forget previous request, i need the crime data content"
     ],
-    "agent": "sql_agent",
-    "sql_query": "SELECT g.name AS genre, SUM(il.unit_price * il.quantity) AS total_sales \nFROM genre g \nJOIN track t ON g.genre_id = t.genre_id \nJOIN invoice_line il ON t.track_id = il.track_id \nGROUP BY g.name \nORDER BY total_sales DESC",
-    "detail": "SELECT g.name AS genre, SUM(il.unit_price * il.quantity) AS total_sales \nFROM genre g \nJOIN track t ON g.genre_id = t.genre_id \nJOIN invoice_line il ON t.track_id = il.track_id \nGROUP BY g.name \nORDER BY total_sales DESC"
+    "files": "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files",
+    "agent": "file_agent",
+    "file_content": "[{\"brand\": \"Honda\", \"name\": \"Honda SP 125\", \"price\": \"Rs.89,468 - 1 Lakh*(View On Road Price)\" ...",
+    "summary": "The file contains a dataset of various bike models, including details such as brand, name, price, rating, mileage, engine cc, and power.",
+    "file_error_message": "No file matching crime data is available in the provided list."
 }

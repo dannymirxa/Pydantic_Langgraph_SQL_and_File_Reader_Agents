@@ -1,7 +1,9 @@
 from dotenv import load_dotenv
 from langgraph.graph import END, START, StateGraph
-from typing_extensions import TypedDict
+from langgraph.graph.message import AnyMessage, add_messages
+from typing_extensions import TypedDict, Annotated
 from sqlalchemy import Engine, create_engine
+from langchain_core.messages import HumanMessage
 
 from agents import  sql_query_creator, file_reader, master
 from agents.file_reader import file_reader_agent, FileSuccess
@@ -10,16 +12,23 @@ from agents.master import (
                         master_agent, MasterAgentResponse,
                         SQL_AGENT,
                         FILE_AGENT,
-                        BOTH_AGENT
+                        BOTH_AGENT,
+                        NONE
                         )
 from util_functions.file_operations import list_files
 
 load_dotenv()
 
+# db_engine = create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment')
+# files = list_files(dir ="/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files")
+
 class AllState(TypedDict):
-    request: str
-    db_engine: Engine
-    files: list[str]
+    # request: str
+    request: Annotated[list[AnyMessage], add_messages]
+    # db_engine: Engine = db_engine
+    # files: list[str] = files
+    db_engine: str
+    files: str
     agent: str
     sql_query: str | None
     detail: str | None
@@ -32,13 +41,12 @@ class FileReaderState(TypedDict):
     request: str
     error_message: str | None = None
 
-db_engine = create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment')
-files = list_files(dir ="/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files")
+
 
 def master_agent_node(state = AllState):
     master_agent_response = master_agent.run_sync(
-        user_prompt=state["request"], 
-        deps=master.MasterDependencies(db_engine=state["db_engine"], available_files=state["files"])
+        user_prompt=state["request"][-1].content,
+        deps=master.MasterDependencies(db_engine=create_engine(state["db_engine"]), available_files=list_files(dir =state["files"]))
         )
     return {
         "agent": master_agent_response.output.agent
@@ -47,8 +55,8 @@ def master_agent_node(state = AllState):
 
 def sql_query_creator_node(state: AllState):
     sql_query_agent_response = sql_query_creator_agent.run_sync(
-        user_prompt=state["request"], 
-        deps=sql_query_creator.Dependencies(db_engine=state["db_engine"])
+        user_prompt=state["request"][-1].content,
+        deps=sql_query_creator.Dependencies(db_engine=create_engine(state["db_engine"]))
         )
     
     if isinstance(sql_query_agent_response.output, SQLSuccess):
@@ -57,16 +65,15 @@ def sql_query_creator_node(state: AllState):
             "detail": sql_query_agent_response.output.sql_query,
         }
     
-    else: 
+    else:
         return {
             "sql_error_message": sql_query_agent_response.output.error_message
         }
 
-
 def file_reader_node(state: AllState):
     file_reader_agent_response = file_reader_agent.run_sync(
-        user_prompt=state["request"], 
-        deps= file_reader.Dependencies(files=state["files"])
+        user_prompt=state["request"][-1].content,
+        deps= file_reader.Dependencies(files=list_files(state["files"]))
         )
     
     if isinstance(file_reader_agent_response.output, FileSuccess):
@@ -78,12 +85,21 @@ def file_reader_node(state: AllState):
         return {
             "file_error_message": file_reader_agent_response.output.error_message
         }
+        
 
 def output(state: AllState):
     import json
     output_state = state.copy()
     if "db_engine" in output_state:
         del output_state["db_engine"]
+    
+    # Convert HumanMessage objects to their content strings for JSON serialization
+    if "request" in output_state and isinstance(output_state["request"], list):
+        output_state["request"] = [
+            msg.content if hasattr(msg, 'content') else str(msg)
+            for msg in output_state["request"]
+        ]
+
     with open("checking_output.json", "w") as f:
         json.dump(output_state, f, indent=4)
     return state
@@ -95,6 +111,8 @@ def sql_or_output_router(state: AllState):
         return "sql_query_create_agent"
     elif state["agent"] == FILE_AGENT:
         return "file_reader_agent"
+    elif state["agent"] == NONE:
+        return "end"
     else:
         return "end"
 
@@ -136,9 +154,11 @@ def create_graph():
 
     return graph.compile()
 
+graph = create_graph()
+
 def main():
 
-    graph = create_graph()
+    
 
     from langchain_core.runnables.graph import MermaidDrawMethod
 
@@ -147,12 +167,16 @@ def main():
     )
 
     initial_state = {
-                        "request":  
-                            "Need to know about total album sales by genre" ,
+                        "request":
+                            [HumanMessage(content="forget previous request, i need the crime data content")],
+                        # "db_engine":
+                        #     create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment'),
+                        # "files": 
+                        #     list_files(dir ="/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files")
                         "db_engine":
-                            create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment'),
+                           'postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment',
                         "files": 
-                            list_files(dir ="/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files")
+                            "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files"
                     }
 
     with open("graph.png", "wb") as f:

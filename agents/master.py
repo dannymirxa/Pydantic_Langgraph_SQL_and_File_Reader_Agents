@@ -18,6 +18,7 @@ from util_functions.file_operations import list_files
 SQL_AGENT = "sql_agent"
 FILE_AGENT = "file_agent"
 BOTH_AGENT = "both_agent"
+NONE = 'none'
 
 class MasterAgentResponse(BaseModel):
     agent: str
@@ -52,14 +53,16 @@ def master_system_prompt(ctx: RunContext[MasterDependencies]) -> str:
       The available files are dynamically retrieved from the 'files/' directory.
 
     **Instructions:**
-    1. Analyze the user's request carefully.
-    2. Determine whether the request is primarily about database interaction or file content reading.
-    3. Give output between these options `{SQL_AGENT}` for `SQL Query Creator Agent` or `{FILE_AGENT}` for `File Reader Agent` with the user's original query.
-    4. If the user's request clearly involves both database interaction (e.g., "sales", "customers", "products") AND file content reading (e.g., "document", "report", "file content"), give output `{BOTH_AGENT}`.
-    5. If the user's request is ambiguous or requires both, prioritize the most direct interpretation or ask for clarification if absolutely necessary (though try to avoid asking questions and make a decision).
-    5. The output of the chosen sub-agent will be wrapped in a `MasterAgentResponse`.
+    1. Carefully analyze the user's request to determine the primary intent.
+    2. If the request involves querying a database (e.g., "how many genres", "list tables", "describe table", "run query", "database", "SQL", "db"), output `{SQL_AGENT}`.
+    3. If the request involves reading or summarizing content from files (e.g., "read file", "summarize file", "content of", "information from", "PDF", "CSV", "TXT", "JSON", "file", "document", "report"), output `{FILE_AGENT}`.
+    4. If the request clearly involves both database interaction AND file content reading (e.g., "genres and summary of file", "SQL query and read document", "database and file content"), output `{BOTH_AGENT}`.
+    5. If the request is ambiguous, prioritize the most direct interpretation.
+    6. The output of the chosen sub-agent will be wrapped in a `MasterAgentResponse`.
 
-    Only choose from these options: `{SQL_AGENT}`, `{FILE_AGENT}`, or `{BOTH_AGENT}`"
+    When `{SQL_AGENT}`, `{FILE_AGENT}`, `{BOTH_AGENT}` are not viable options, output `{NONE}`.
+
+    Only choose from these options: `{SQL_AGENT}`, `{FILE_AGENT}`, `{BOTH_AGENT}` or `{NONE}`"
     """
 
 @master_agent.output_validator
