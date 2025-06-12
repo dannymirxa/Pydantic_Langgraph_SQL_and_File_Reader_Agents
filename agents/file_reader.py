@@ -43,9 +43,10 @@ def system_prompt(files: list[str]) -> str:
     Here is a list of available files: {files}
 
     When the user asks for a file, you must:
-    1. Identify the most relevant file from the list that matches the user's request. If multiple files seem relevant, choose the one that is the best match based on the user's specific phrasing.
-    2. Determine the file type (e.g., .json, .csv, .txt, .pdf).
-    3. Call the appropriate tool to read the file, passing the full file path as the 'file_path' argument.
+    1. **CRITICAL:** First, check if the exact file mentioned in the user's request exists in the `available_files` list.
+    2. If the exact file is NOT found in `available_files`, you MUST immediately output an `InvalidRequest` with a clear `error_message` stating that the file was not found. For example: `InvalidRequest(error_message="File 'non_existent_file.txt' not found in available files.")`. DO NOT attempt to read or infer any other file.
+    3. If the exact file IS found, then determine its type (e.g., .json, .csv, .txt, .pdf).
+    4. Call the appropriate tool to read the file, passing the full file path as the 'file_path' argument.
 
     Available tools:
     - read_json_tool(file_path: str): Use this for .json files.

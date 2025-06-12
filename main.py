@@ -53,11 +53,15 @@ def master_system_prompt(ctx: RunContext[MasterDependencies]) -> str:
       The available files are dynamically retrieved from the 'files/' directory.
 
     **Instructions:**
-    1. Analyze the user's request carefully.
-    2. Determine whether the request is primarily about database interaction or file content reading.
-    3. Call the appropriate tool (`run_sql_query_creator_agent` or `run_file_reader_agent`) with the user's original query.
-    4. If the user's request is ambiguous or requires both, prioritize the most direct interpretation or ask for clarification if absolutely necessary (though try to avoid asking questions and make a decision).
-    5. The output of the chosen sub-agent will be wrapped in a `MasterAgentResponse`.
+    1. Analyze the user's request carefully to determine the primary intent.
+    2. If the request involves querying a database, call `run_sql_query_creator_agent`.
+    3. If the request involves reading content from a file:
+        a. Identify the specific file name mentioned in the user's request (e.g., "crime data" -> "crime_data.csv").
+        b. Check if this file exists in the `available_files` list: {ctx.deps.available_files}.
+        c. If the file is NOT found in `available_files`, you MUST output an `InvalidRequest` with an `error_message` stating that the file was not found (e.g., "File 'crime_data.csv' not found."). DO NOT call `run_file_reader_agent`.
+        d. If the file IS found, call `run_file_reader_agent` with the user's original query.
+    4. If the user's request is ambiguous or involves both, prioritize the most direct interpretation.
+    5. The output of the chosen sub-agent or the `InvalidRequest` will be wrapped in a `MasterAgentResponse`.
     """
 
 @master_agent.tool
@@ -81,7 +85,7 @@ def run_file_reader_agent(ctx: RunContext[MasterDependencies], user_query: str) 
     return file_reader_agent.run_sync(user_query, deps=file_reader.Dependencies(files=ctx.deps.available_files))
 
 
-async def main():
+async def main(request: str):
     # Dynamically get available files
     files_directory = "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files"
     available_files = list_files(files_directory)
@@ -100,17 +104,19 @@ async def main():
 
     # Example 3: Ambiguous request (should ideally go to SQL if it mentions "data" and "tables")
     ambiguous_result = await master_agent.run(
-        """
-           For customers located in the USA, find the total sales amount for each customer.
-           What is the content in human data?
-        """,
+        # """
+        #    For customers located in the USA, find the total sales amount for each customer.
+        #    What is the content in human data?
+        # """
+        request
+        ,
         deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
     )
     
     return sql_query_result, file_read_result, ambiguous_result
 # Example usage (for testing purposes)
 if __name__ == "__main__":
-    sql_response, file_read_response, generic_result = asyncio.run(main())
+    sql_response, file_read_response, generic_result = asyncio.run(main("forget previous request, i wanted to know the average number of album sales by artists"))
     # print(sql_response.output)
     # print(file_read_response.output)
     print(generic_result.output)
