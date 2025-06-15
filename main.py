@@ -1,4 +1,4 @@
-import sys
+import os, sys
 import asyncio
 from dotenv import load_dotenv
 from dataclasses import dataclass
@@ -7,6 +7,7 @@ from annotated_types import MinLen
 from pydantic import BaseModel, Field
 from pydantic_ai import Agent, ModelRetry, RunContext
 from sqlalchemy import create_engine, Engine
+import logfire
 
 from models import OPENAI_MODEL
 from agents import sql_query_creator, file_reader, master
@@ -16,6 +17,9 @@ from agents.master import MasterAgentResponse
 from util_functions.file_operations import list_files
 
 load_dotenv("/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/.env")
+
+logfire.configure(token=os.getenv("LOGFIRE_TOKEN"))
+logfire.instrument_pydantic_ai() 
 
 # Initialize database engine
 DATABASE_URL = "postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment" # Replace with your actual database URL
@@ -53,15 +57,16 @@ def master_system_prompt(ctx: RunContext[MasterDependencies]) -> str:
       The available files are dynamically retrieved from the 'files/' directory.
 
     **Instructions:**
-    1. Analyze the user's request carefully to determine the primary intent.
-    2. If the request involves querying a database, call `run_sql_query_creator_agent`.
-    3. If the request involves reading content from a file:
+    1. Analyze the user's request carefully to determine the single, primary intent.
+    2. Based on the primary intent, select ONLY ONE of the available sub-agents to delegate the request to.
+    3. If the request involves querying a database, call `run_sql_query_creator_agent`.
+    4. If the request involves reading content from a file:
         a. Identify the specific file name mentioned in the user's request (e.g., "crime data" -> "crime_data.csv").
         b. Check if this file exists in the `available_files` list: {ctx.deps.available_files}.
         c. If the file is NOT found in `available_files`, you MUST output an `InvalidRequest` with an `error_message` stating that the file was not found (e.g., "File 'crime_data.csv' not found."). DO NOT call `run_file_reader_agent`.
         d. If the file IS found, call `run_file_reader_agent` with the user's original query.
-    4. If the user's request is ambiguous or involves both, prioritize the most direct interpretation.
-    5. The output of the chosen sub-agent or the `InvalidRequest` will be wrapped in a `MasterAgentResponse`.
+    5. If the user's request is ambiguous or involves multiple distinct intents (e.g., asking for both SQL data and file content in one query), you MUST prioritize the most direct interpretation and delegate to only ONE sub-agent. If the user requires information from both types of sources, they should ideally break down their request into separate, distinct queries.
+    6. The output of the chosen sub-agent or the `InvalidRequest` will be wrapped in a `MasterAgentResponse`.
     """
 
 @master_agent.tool
@@ -116,7 +121,7 @@ async def main(request: str):
     return sql_query_result, file_read_result, ambiguous_result
 # Example usage (for testing purposes)
 if __name__ == "__main__":
-    sql_response, file_read_response, generic_result = asyncio.run(main("forget previous request, i wanted to know the average number of album sales by artists"))
+    sql_response, file_read_response, generic_result = asyncio.run(main("I wanted to know the average number of album sales by artists and the content of specific agents pdf?"))
     # print(sql_response.output)
     # print(file_read_response.output)
     print(generic_result.output)

@@ -44,13 +44,14 @@ def system_prompt() -> str:
     Follow these steps meticulously:
     1.  **List Tables:** If you need to know the available tables, use the `list_tables_tool`.
     2.  **Describe Table:** To understand the schema of specific table(s) relevant to the user's request, use the `describe_table_tool` for each of them.
-    3.  **Run SQL Query:** Construct the SQL query in Postgres syntax based on the user's request and the table schemas. Execute it using the `run_sql_tool`. This tool will return a JSON string of the query results (or an error/empty array if no data).
-    4.  **Formulate Response (SQLSuccess):** Construct your final `SQLSuccess` response.
+    3.  **Handle Sales/Revenue Queries:** If the user's request involves "sales", "revenue", or "total amount", remember that this data is typically derived from the `InvoiceLine` table (which has `UnitPrice` and `Quantity`). You will likely need to join `Artist`, `Album`, `Track`, and `InvoiceLine` tables to fulfill such requests. Calculate sales as `SUM(InvoiceLine.UnitPrice * InvoiceLine.Quantity)`.
+    4.  **Run SQL Query:** Construct the SQL query in Postgres syntax based on the user's request and the table schemas. Execute it using the `run_sql_tool`. This tool will return a JSON string of the query results (or an error/empty array if no data).
+    5.  **Formulate Response (SQLSuccess):** Construct your final `SQLSuccess` response.
         a.  The `detail` field should be formatted as markdown and comprehensively contain:
             - An explanation of the SQL query and the steps taken.
             - The SQL query that was executed.
             - The complete JSON string result from `run_sql_tool`. This JSON string should be presented clearly within a JSON markdown code block.
-        b. If at any stage an error occurs (e.g., `run_sql_tool` returns an error, or `create_dataframe_tool` indicates an error) or a query yields no data (after `run_sql_tool`), explain this in the `detail` field of `SQLSuccess` or use an `InvalidRequest` response if appropriate (e.g., user request is malformed).
+        b. If at any stage an error occurs (e.g., `run_sql_tool` returns an error) or a query yields no data (after `run_sql_tool`), explain this in the `detail` field of `SQLSuccess` or use an `InvalidRequest` response if appropriate (e.g., user request is malformed).
     
     """
 
