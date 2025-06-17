@@ -7,8 +7,8 @@ from langchain_core.messages import HumanMessage
 
 from agents import  sql_query_creator, file_reader, master
 from agents.file_reader import file_reader_agent, FileSuccess
-from agents.sql_query_creator import sql_query_creator_agent, SQLSuccess
-from agents.master import ( 
+from agents.sql_query_creator import sql_query_creator_agent, SQLSuccess, SQLSuccessWithInsights
+from agents.master import (
                         master_agent, MasterAgentResponse,
                         SQL_AGENT,
                         FILE_AGENT,
@@ -16,6 +16,7 @@ from agents.master import (
                         NONE
                         )
 from util_functions.file_operations import list_files
+from models import ChartSuggestion
 
 load_dotenv()
 
@@ -32,6 +33,8 @@ class AllState(TypedDict):
     agent: str
     sql_query: str | None
     detail: str | None
+    data_insights: list[str] | None
+    chart_suggestions: list[ChartSuggestion] | None
     sql_error_message: str | None
     file_content: str | None
     summary: str | None
@@ -59,13 +62,19 @@ def sql_query_creator_node(state: AllState):
         deps=sql_query_creator.Dependencies(db_engine=create_engine(state["db_engine"]))
         )
     
-    if isinstance(sql_query_agent_response.output, SQLSuccess):
+    if isinstance(sql_query_agent_response.output, SQLSuccessWithInsights):
         return {
             "sql_query": sql_query_agent_response.output.sql_query,
-            "detail": sql_query_agent_response.output.sql_query,
+            "detail": sql_query_agent_response.output.detail,
+            "data_insights": sql_query_agent_response.output.data_insights,
+            "chart_suggestions": sql_query_agent_response.output.chart_suggestions,
         }
-    
-    else:
+    elif isinstance(sql_query_agent_response.output, SQLSuccess):
+        return {
+            "sql_query": sql_query_agent_response.output.sql_query,
+            "detail": sql_query_agent_response.output.detail,
+        }
+    else: # InvalidRequest
         return {
             "sql_error_message": sql_query_agent_response.output.error_message
         }
@@ -98,6 +107,13 @@ def output(state: AllState):
         output_state["request"] = [
             msg.content if hasattr(msg, 'content') else str(msg)
             for msg in output_state["request"]
+        ]
+
+    # Convert ChartSuggestion objects to dictionaries for JSON serialization
+    if "chart_suggestions" in output_state and output_state["chart_suggestions"] is not None:
+        output_state["chart_suggestions"] = [
+            chart.model_dump() if hasattr(chart, 'model_dump') else chart
+            for chart in output_state["chart_suggestions"]
         ]
 
     with open("checking_output.json", "w") as f:

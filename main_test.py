@@ -12,7 +12,7 @@ import asyncio
 @dataclass
 class Dependencies:
     db_engine: Engine
-    files: list[str]
+    # files: list[str]
 
 
 
@@ -20,26 +20,26 @@ async def main(request: str):
 
     db_engine = create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment')
 
-    # deps = Dependencies(db_engine=db_engine)
+    deps = Dependencies(db_engine=db_engine)
 
-    # sql_agent_response = await sql_query_creator_agent.run(user_prompt=request,
-    #                                                        deps=deps)
+    sql_agent_response = await sql_query_creator_agent.run(user_prompt=request,
+                                                           deps=deps)
     
-    # return sql_agent_response
-    file = list_files(dir ="/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files")
+    return sql_agent_response
+    # file = list_files(dir ="/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files")
 
-    deps = MasterDependencies(db_engine=db_engine, available_files=file)
+    # deps = MasterDependencies(db_engine=db_engine, available_files=file)
     
-    file_reader_agent_response = await master_agent.run(user_prompt=request,
-                                                                     deps=deps)
+    # file_reader_agent_response = await master_agent.run(user_prompt=request,
+    #                                                                  deps=deps)
     
-    return file_reader_agent_response
+    # return file_reader_agent_response
 
     
 if  __name__ == '__main__':
     
     # file_response = asyncio.run(main("I want to know how many sales of albums each artist with at least one rock genre"))
-    file_response = asyncio.run(main("Need to know about total album sales by artist and generic agent docs"))
+    file_response = asyncio.run(main("Need to know about total album sales by artist"))
     print("-------Output-------")
     print(file_response.output)
     # print(file_response.output.sql_query)

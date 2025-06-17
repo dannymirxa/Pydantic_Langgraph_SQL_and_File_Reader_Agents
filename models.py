@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import Annotated
+from typing import Annotated, List, Dict, Any, Optional, Union
 from annotated_types import MinLen
 from openai import AsyncAzureOpenAI, AzureOpenAI
 from pydantic_ai.models.gemini import GeminiModel
@@ -35,3 +35,16 @@ class Request(BaseModel):
 class ChartResponses(BaseModel):
     insights: Annotated[str, MinLen(1), Field(alias='insights', description="insights from the dataset and graph")]
     python_code: Annotated[str, MinLen(1), Field(alias='python_code',description='Python code to plot the graph, as markdown')]
+
+class ChartSuggestion(BaseModel):
+   type: str = Field(description="Type of chart (e.g., 'bar', 'line', 'pie', 'scatter')")
+   x_axis: Optional[str] = Field(description="Column name for the X-axis")
+   y_axis: Optional[str] = Field(description="Column name for the Y-axis")
+   series: Optional[List[str]] = Field(description="Column names for series/groups")
+   title: Optional[str] = Field(description="Suggested chart title")
+
+class SQLSuccessWithInsights(BaseModel):
+   sql_query: Annotated[str, MinLen(1)] = Field(alias='sql_query', description='SQL query to run')
+   detail: str = Field(alias='detail', description='Explanation of the SQL query, steps taken, the result of the query (JSON)')
+   data_insights: List[str] = Field(default_factory=list, description="List of key insights derived from the SQL query result.")
+   chart_suggestions: List[ChartSuggestion] = Field(default_factory=list, description="Suggested charts for visualizing the data.")

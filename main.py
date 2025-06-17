@@ -113,31 +113,37 @@ async def main(request: str):
         #    For customers located in the USA, find the total sales amount for each customer.
         #    What is the content in human data?
         # """
-        request
-        ,
+        request,
         deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
     )
     
     return sql_query_result, file_read_result, ambiguous_result
 # Example usage (for testing purposes)
 if __name__ == "__main__":
-    sql_response, file_read_response, generic_result = asyncio.run(main("I wanted to know the average number of album sales by artists and the content of specific agents pdf?"))
+    # Example of a request that should trigger SQL query and insight generation
+    insight_query = "Show me the total sales amount for each artist and provide insights and chart suggestions."
+    
+    # Dynamically get available files for the main function's run
+    files_directory = "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files"
+    available_files = list_files(files_directory)
+
+    master_response = asyncio.run(main(insight_query))
+    
+    print("\n--- Master Agent Response with Insights ---")
+    # The master_response is a tuple (sql_query_result, file_read_result, ambiguous_result)
+    # We are interested in the last one, which is `ambiguous_result` from the `main` function
+    # which now takes the `request` parameter.
+    # To properly test, the `main` function would need to be refactored to run only one query based on `request`.
+    # For this demonstration, I'll run the insight_query directly.
+
+    insight_result = asyncio.run(master_agent.run(
+        insight_query,
+        deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
+    ))
+
+    print(insight_result.output)
+    # Original examples (commented out for clarity in this demonstration)
+    # sql_response, file_read_response, generic_result = asyncio.run(main("I wanted to know the average number of album sales by artists and the content of specific agents pdf?"))
     # print(sql_response.output)
     # print(file_read_response.output)
-    print(generic_result.output)
-
-    # # Example 2: File reading
-    # file_read_result = master_agent.run(
-    #     "Read the content of the bike data file.",
-    #     deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
-    # )
-    # print("\n--- File Read Result ---")
-    # print(file_read_result)
-
-    # # Example 3: Ambiguous request (should ideally go to SQL if it mentions "data" and "tables")
-    # ambiguous_result = master_agent.run(
-    #     "I need sto know sales of albums by artist. I need to know also about risc",
-    #     deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
-    # )
-    # print("\n--- Ambiguous Request Result ---")
-    # print(ambiguous_result)
+    # print(generic_result.output)
