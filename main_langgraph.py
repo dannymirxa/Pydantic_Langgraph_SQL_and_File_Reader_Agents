@@ -1,13 +1,14 @@
 from dotenv import load_dotenv
 from langgraph.graph import END, START, StateGraph
 from langgraph.graph.message import AnyMessage, add_messages
-from typing_extensions import TypedDict, Annotated
+from typing_extensions import TypedDict, Annotated, Optional
 from sqlalchemy import Engine, create_engine
 from langchain_core.messages import HumanMessage
 
-from agents import  sql_query_creator, file_reader, master
+from agents import  sql_query_creator, file_reader, master, insights_curator
 from agents.file_reader import file_reader_agent, FileSuccess
-from agents.sql_query_creator import sql_query_creator_agent, SQLSuccess, SQLSuccessWithInsights
+from agents.sql_query_creator import sql_query_creator_agent, SQLSuccess
+from agents.insights_curator import data_insights_agent, DataframeSuccess
 from agents.master import (
                         master_agent, MasterAgentResponse,
                         SQL_AGENT,
@@ -33,9 +34,10 @@ class AllState(TypedDict):
     agent: str
     sql_query: str | None
     detail: str | None
-    data_insights: list[str] | None
-    chart_suggestions: list[ChartSuggestion] | None
+    query_results_json: Optional[str]
     sql_error_message: str | None
+    data_insights: Optional[list[str]]
+    insights_error: str | None
     file_content: str | None
     summary: str | None
     file_error_message: str | None
@@ -43,8 +45,6 @@ class AllState(TypedDict):
 class FileReaderState(TypedDict):
     request: str
     error_message: str | None = None
-
-
 
 def master_agent_node(state = AllState):
     master_agent_response = master_agent.run_sync(
@@ -55,24 +55,17 @@ def master_agent_node(state = AllState):
         "agent": master_agent_response.output.agent
     }
 
-
 def sql_query_creator_node(state: AllState):
     sql_query_agent_response = sql_query_creator_agent.run_sync(
         user_prompt=state["request"][-1].content,
         deps=sql_query_creator.Dependencies(db_engine=create_engine(state["db_engine"]))
         )
     
-    if isinstance(sql_query_agent_response.output, SQLSuccessWithInsights):
+    if isinstance(sql_query_agent_response.output, SQLSuccess):
         return {
             "sql_query": sql_query_agent_response.output.sql_query,
             "detail": sql_query_agent_response.output.detail,
-            "data_insights": sql_query_agent_response.output.data_insights,
-            "chart_suggestions": sql_query_agent_response.output.chart_suggestions,
-        }
-    elif isinstance(sql_query_agent_response.output, SQLSuccess):
-        return {
-            "sql_query": sql_query_agent_response.output.sql_query,
-            "detail": sql_query_agent_response.output.detail,
+            "query_results_json": sql_query_agent_response.output.query_results_json,
         }
     else: # InvalidRequest
         return {
@@ -94,7 +87,23 @@ def file_reader_node(state: AllState):
         return {
             "file_error_message": file_reader_agent_response.output.error_message
         }
-        
+    
+def data_insights_node(state: AllState):
+    data_insights_agent_response = data_insights_agent.run_sync(
+        deps=insights_curator.Dependencies( sql_query= state["sql_query"],
+                                            detail= state["detail"],
+                                            query_results_json= state["query_results_json"]
+                                            )
+        )
+    
+    if isinstance(data_insights_agent_response.output, DataframeSuccess):
+        return {
+            "data_insights": data_insights_agent_response.output.data_insights,
+        }
+    else: # InvalidRequest
+        return {
+            "insights_error": data_insights_agent_response.output.error_message
+        }        
 
 def output(state: AllState):
     import json
@@ -107,13 +116,6 @@ def output(state: AllState):
         output_state["request"] = [
             msg.content if hasattr(msg, 'content') else str(msg)
             for msg in output_state["request"]
-        ]
-
-    # Convert ChartSuggestion objects to dictionaries for JSON serialization
-    if "chart_suggestions" in output_state and output_state["chart_suggestions"] is not None:
-        output_state["chart_suggestions"] = [
-            chart.model_dump() if hasattr(chart, 'model_dump') else chart
-            for chart in output_state["chart_suggestions"]
         ]
 
     with open("checking_output.json", "w") as f:
@@ -136,7 +138,7 @@ def after_sql_router(state: AllState):
     if state["agent"] == BOTH_AGENT:
         return "file_reader_agent"
     else: # This means it was originally SQL_AGENT
-        return "output"
+        return "data_insights_agent"
     
 def create_graph():
     graph = StateGraph(AllState)
@@ -145,6 +147,8 @@ def create_graph():
     graph.add_node("sql_query_create_agent", sql_query_creator_node)
     graph.add_node("file_reader_agent", file_reader_node)
     graph.add_node("output", output)
+    graph.add_node("data_insights_agent", data_insights_node)
+
 
     graph.add_conditional_edges("master",
                                 sql_or_output_router,
@@ -159,11 +163,12 @@ def create_graph():
                                 after_sql_router,
                                 {
                                     "file_reader_agent": "file_reader_agent", # If both, go to file reader
-                                    "output": "output" # If only SQL, go to output
+                                    "data_insights_agent": "data_insights_agent" # If only SQL, go to output
                                 }
     )
 
     graph.add_edge("file_reader_agent", "output")
+    graph.add_edge("data_insights_agent", "output")
     graph.add_edge("output", END)
 
     graph.set_entry_point("master")
@@ -174,8 +179,6 @@ graph = create_graph()
 
 def main():
 
-    
-
     from langchain_core.runnables.graph import MermaidDrawMethod
 
     graph_png = graph.get_graph().draw_mermaid_png(
@@ -184,7 +187,7 @@ def main():
 
     initial_state = {
                         "request":
-                            [HumanMessage(content="forget previous request, i need the crime data content")],
+                            [HumanMessage(content="I want to know how many sales of albums each artist with at least one rock genre and create insights")],
                         # "db_engine":
                         #     create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment'),
                         # "files": 

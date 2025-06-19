@@ -10,8 +10,8 @@ from sqlalchemy import create_engine, Engine
 import logfire
 
 from models import OPENAI_MODEL
-from agents import sql_query_creator, file_reader, master
-from agents.sql_query_creator import sql_query_creator_agent, SQLResponse
+from agents import file_reader, master, sql_query_creator_insights_curator
+from agents.sql_query_creator_insights_curator import sql_query_creator_agent, SQLResponse
 from agents.file_reader import file_reader_agent,  FileResponse
 from agents.master import MasterAgentResponse 
 from util_functions.file_operations import list_files
@@ -77,7 +77,7 @@ def run_sql_query_creator_agent(ctx: RunContext[MasterDependencies], user_query:
     Pass the user's original query directly to this tool.
     """
     print(f"Delegating to SQL Query Creator Agent with query: {user_query}")
-    return sql_query_creator_agent.run_sync(user_query, deps=sql_query_creator.Dependencies(db_engine=ctx.deps.db_engine))
+    return sql_query_creator_agent.run_sync(user_query, deps=sql_query_creator_insights_curator.Dependencies(db_engine=ctx.deps.db_engine))
 
 @master_agent.tool
 def run_file_reader_agent(ctx: RunContext[MasterDependencies], user_query: str) -> FileResponse:
@@ -95,17 +95,17 @@ async def main(request: str):
     files_directory = "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files"
     available_files = list_files(files_directory)
 
-    # Example 1: SQL query
-    sql_query_result = await master_agent.run(
-        "Show me how many albums each artist has",
-        deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
-    )
+    # # Example 1: SQL query
+    # sql_query_result = await master_agent.run(
+    #     "Show me how many albums each artist has",
+    #     deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
+    # )
 
-    # Example 2: File reading
-    file_read_result = await master_agent.run(
-        "What is in the bike data?",
-        deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
-    )
+    # # Example 2: File reading
+    # file_read_result = await master_agent.run(
+    #     "What is in the bike data?",
+    #     deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
+    # )
 
     # Example 3: Ambiguous request (should ideally go to SQL if it mentions "data" and "tables")
     ambiguous_result = await master_agent.run(
@@ -117,11 +117,11 @@ async def main(request: str):
         deps=MasterDependencies(db_engine=db_engine, available_files=available_files)
     )
     
-    return sql_query_result, file_read_result, ambiguous_result
+    return ambiguous_result #, sql_query_result, # file_read_result, 
 # Example usage (for testing purposes)
 if __name__ == "__main__":
     # Example of a request that should trigger SQL query and insight generation
-    insight_query = "Show me the total sales amount for each artist and provide insights and chart suggestions."
+    insight_query = "Show me the total sales amount for each artist and provide insights"
     
     # Dynamically get available files for the main function's run
     files_directory = "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files"

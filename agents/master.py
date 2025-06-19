@@ -9,8 +9,8 @@ from pydantic_ai import Agent, ModelRetry, RunContext
 from sqlalchemy import create_engine, Engine
 
 from models import OPENAI_MODEL
-from agents import  sql_query_creator, file_reader  
-from agents.sql_query_creator import sql_query_creator_agent, SQLResponse
+from agents import  file_reader, sql_query_creator_insights_curator  
+from agents.sql_query_creator_insights_curator import sql_query_creator_agent, SQLResponse
 from agents.file_reader import file_reader_agent,  FileResponse
 from util_functions.file_operations import list_files
 
