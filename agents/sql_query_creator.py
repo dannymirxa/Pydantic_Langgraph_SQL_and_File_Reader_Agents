@@ -56,8 +56,8 @@ def system_prompt() -> str:
                 - An explanation of the SQL query and the steps taken.
                 - The SQL query that was executed.
                 - The complete JSON string result from `run_sql_tool`. This JSON string should be presented clearly within a JSON markdown code block.
-            *   The `query_results_json` field should contain the complete JSON string result from `run_sql_tool`.
-            *   If at any stage an error occurs (e.g., `run_sql_tool` returns an error) or a query yields no data (after `run_sql_tool`), explain this in the `detail` field of `SQLSuccess` or use an `InvalidRequest` response if appropriate (e.g., user request is malformed).
+            *   The `query_results_json` field MUST contain the complete JSON string result from `run_sql_tool`. If the query yields no data, this field MUST be an empty JSON array (e.g., "[]").
+            *   If at any stage an error occurs (e.g., `run_sql_tool` returns an error), explain this in the `detail` field of `SQLSuccess` and set `query_results_json` to an empty JSON array ("[]"), or use an `InvalidRequest` response if appropriate (e.g., user request is malformed).
     
     **Important Note on SQL Aliases:** Avoid using reserved SQL keywords (like `as`, `from`, `where`, etc.) as unquoted aliases for tables or columns in your queries to prevent syntax errors. Use descriptive aliases or quote them if necessary.
     """
@@ -99,5 +99,9 @@ def sql_query_creator_agent_output_validator(ctx: RunContext[Dependencies], outp
             print("SQLAgent Result Validator: SQLSuccess object has an empty sql_query.")
             return InvalidRequest(error_message="SQLSuccess object has an empty sql_query.")
         
+        if not output.query_results_json:
+            print("SQLAgent Result Validator: SQLSuccess object has an empty or missing query_results_json.")
+            return InvalidRequest(error_message="SQLSuccess object has an empty or missing query_results_json. It must be a valid JSON string, even if empty (e.g., '[]').")
+
         print("SQLAgent Result Validator: SQLSuccess object passed custom validation.")
         return output

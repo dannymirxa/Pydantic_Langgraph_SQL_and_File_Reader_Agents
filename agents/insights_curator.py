@@ -53,8 +53,8 @@ def create_dataframe_pd_tool(ctx: RunContext[Dependencies]):
             num_rows=len(df),
             num_columns=len(df.columns),
             column_names=df.columns.tolist(),
-            data_types={col: str(dtype) for col, dtype in df.dtypes.to_dict().items()},
-            missing_values=df.isnull().sum().to_dict()
+            data_types={str(col): str(dtype) for col, dtype in df.dtypes.items()},
+            missing_values={str(col): int(count) for col, count in df.isnull().sum().items()}
         )
     except Exception as e:
         # It's good practice to handle potential errors
@@ -78,7 +78,7 @@ def system_prompt() -> str:
     - A brief, insightful description of what this dataset contains, highlighting its main purpose or content.
     - 8 to 10 *actionable* data analysis questions that could be explored using this dataset. These questions should go beyond simple observations and suggest potential analyses or deeper dives into the data.
 
-    Your final output must be a 'DataframeSuccess' object containing a list of strings for 'data_insights'.
+    After obtaining and analyzing the metadata, your *final* output must be a 'DataframeSuccess' object containing a list of strings for 'data_insights'.
     If any error occurs during data retrieval or insight generation, return an 'InsightsError' object.
     """
 
@@ -98,7 +98,7 @@ def file_reader_agent_output_validator(ctx: RunContext[Dependencies], output: Un
         # If the output is DataFrameMetadata, the agent needs to continue to generate insights.
         # This part of the validator should not be reached if the agent is correctly following the prompt.
         # However, as a safeguard, we can return an error or prompt the agent to continue.
-        return InsightsError(error_message="Agent returned DataFrameMetadata but expected DataframeSuccess. Please generate insights based on the metadata.")
+        return InsightsError(error_message="Agent returned DataFrameMetadata as final output, but DataframeSuccess was expected. The agent must generate insights based on the metadata and return DataframeSuccess.")
     elif isinstance(output, DataframeSuccess):
         if not output.data_insights:
             print("data_insights_agent Result Validator: No insights can be made")

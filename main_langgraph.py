@@ -4,12 +4,17 @@ from langgraph.graph.message import AnyMessage, add_messages
 from typing_extensions import TypedDict, Annotated, Optional
 from sqlalchemy import Engine, create_engine
 from langchain_core.messages import HumanMessage
+import re, io
+from textwrap import dedent
+import pandas as pd
+import plotly.express as px
+
 
 from agents import  sql_query_creator, file_reader, master, insights_curator, chart_generator
 from agents.file_reader import file_reader_agent, FileSuccess
 from agents.sql_query_creator import sql_query_creator_agent, SQLSuccess
 from agents.insights_curator import data_insights_agent, DataframeSuccess
-from agents.chart_generator import chart_creator_agent, ChartSuccess
+from agents.chart_generator import chartOptions, chart_creator_agent, ChartSuccess
 
 from agents.master import (
                         master_agent, MasterAgentResponse,
@@ -19,7 +24,7 @@ from agents.master import (
                         NONE
                         )
 from util_functions.file_operations import list_files
-from models import ChartSuggestion
+
 
 load_dotenv()
 
@@ -42,6 +47,8 @@ class AllState(TypedDict):
     insights_error: Optional[str]
     python_codes: Optional[list[str]]
     chart_error: str 
+
+    code_error: Optional[str]
 
     insights_error: Optional[str]
     file_content: Optional[str]
@@ -96,11 +103,12 @@ def file_reader_node(state: AllState):
     
 def data_insights_node(state: AllState):
     data_insights_agent_response = data_insights_agent.run_sync(
-        deps=insights_curator.Dependencies( sql_query= state["sql_query"],
-                                            detail= state["detail"],
-                                            query_results_json= state["query_results_json"]
-                                            )
-        )
+            user_prompt=state["request"][-1].content,
+            deps=insights_curator.Dependencies( sql_query= state["sql_query"],
+                                                detail= state["detail"],
+                                                query_results_json= state["query_results_json"]
+                                                )
+            )
     
     if isinstance(data_insights_agent_response.output, DataframeSuccess):
         return {
@@ -109,11 +117,12 @@ def data_insights_node(state: AllState):
     else: # InvalidRequest
         return {
             "insights_error": data_insights_agent_response.output.error_message
-        }        
+        }
     
 def chart_generator_node(state: AllState):
+    chart_prompt = f"I want to create insights and the data visualized in among these charts: {chartOptions}."
     chart_creator_response = chart_creator_agent.run_sync(
-                user_prompt=state["request"][-1].content,
+                user_prompt=chart_prompt,
                 deps=chart_generator.Dependencies(  query_results_json= state["query_results_json"]
                 )
     )
@@ -125,7 +134,23 @@ def chart_generator_node(state: AllState):
     else: # InvalidRequest
         return {
             "chart_error": chart_creator_response.output.error_message
-        }     
+        }
+    
+def run_code(state: AllState):
+    try:
+        for python_code in state["python_codes"]:
+            code_blocks = re.findall(r"```python\n(.*?)```", python_code, re.DOTALL)
+            full_code = "\n".join(code_blocks)
+            full_code = dedent(full_code)
+            print(full_code)
+            exec_globals = {"df": pd.read_json(io.StringIO(state["query_results_json"])), "px": px, "pd": pd}
+            exec(full_code, exec_globals)
+    except Exception as e:
+        return {
+            "code_error": str(e)
+        }
+    return state
+
 
 def output(state: AllState):
     import json
@@ -168,9 +193,10 @@ def after_sql_router(state: AllState):
     return "data_insights_agent"
 
 def after_chart_router(state: AllState):
-    if state["agent"] == BOTH_AGENT:
-        return "file_reader_agent"
-    else:
+    # Always proceed to run_code after chart generation if successful
+    if state.get("python_codes"): # Check if python_codes were generated
+        return "run_code"
+    else: # Otherwise, go to output (e.g., if chart generation failed or no codes were expected)
         return "output"
 
 def create_graph():
@@ -179,9 +205,10 @@ def create_graph():
     graph.add_node("master", master_agent_node)
     graph.add_node("sql_query_create_agent", sql_query_creator_node)
     graph.add_node("file_reader_agent", file_reader_node)
-    graph.add_node("output", output)
     graph.add_node("data_insights_agent", data_insights_node)
     graph.add_node("chart_generator_agent", chart_generator_node)
+    graph.add_node("run_code", run_code)
+    graph.add_node("output", output)
 
     graph.add_conditional_edges("master",
                                 sql_or_output_router,
@@ -203,12 +230,12 @@ def create_graph():
                                 after_chart_router,
                                 {
                                     "file_reader_agent": "file_reader_agent",
-                                    "output": "output"
+                                    "run_code": "run_code"
                                 }
     )
-
-    graph.add_edge("file_reader_agent", "output") # This edge is still needed for the file reader path
     graph.add_edge("data_insights_agent", "chart_generator_agent")
+    graph.add_edge("file_reader_agent", "output") # This edge is still needed for the file reader path
+    graph.add_edge("run_code", "output")
     graph.add_edge("output", END)
 
     graph.set_entry_point("master")
@@ -227,7 +254,8 @@ def main():
 
     initial_state = {
                         "request":
-                            [HumanMessage(content="I want to know how many sales of albums each artist with at least one rock genre. I want to create insights and the data visualized in bar chart and scatter plot")],
+                            [HumanMessage(content="I want to know how many sales of albums each artist with at least one rock genre. I want to create insights and the data visualized in bar chart, scatter plot and line chart. " \
+                            "                       I also need the content of specific agent pdf.")],
                         # "db_engine":
                         #     create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment'),
                         # "files": 
