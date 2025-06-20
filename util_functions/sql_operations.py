@@ -62,7 +62,8 @@ def run_sql_query(db_engine: Engine, query: str, limit: Optional[int] = 10) -> s
             recordset = [row._asdict() for row in rows]
             return json.dumps(recordset, default=str)
         except Exception as e:
-            return []
+            # Return an empty JSON array or an error message as a JSON string
+            return json.dumps([])
         
 
 # db_engine = create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment')

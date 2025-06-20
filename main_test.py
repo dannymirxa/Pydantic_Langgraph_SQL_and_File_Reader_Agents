@@ -6,6 +6,7 @@ from agents.file_reader import file_reader_agent, FileSuccess
 from agents.sql_query_creator import sql_query_creator_agent
 from agents.insights_curator import data_insights_agent
 from agents.master import master_agent, MasterDependencies
+from agents.chart_generator import chart_creator_agent
 from util_functions.file_operations import list_files
 
 from typing_extensions import Optional
@@ -300,14 +301,19 @@ async def main(request: str):
     
     # return file_reader_agent_response
 
-    data_insights_agent_response = await data_insights_agent.run(user_prompt=request,
-                                                                  deps=deps)
+    # data_insights_agent_response = await data_insights_agent.run(user_prompt=request,
+    #                                                               deps=deps)
     
-    return data_insights_agent_response
+    # return data_insights_agent_response
+
+    chart_agent_response = await chart_creator_agent.run(user_prompt=request,
+                                                          deps=deps)
+
+    return chart_agent_response
     
 if  __name__ == '__main__':
     
-    file_response = asyncio.run(main("I want to know how many sales of albums each artist with at least one rock genre and create insights"))
+    file_response = asyncio.run(main("I  want to know the total sales by artist in vertical and horizontal bar charts"))
     # file_response = asyncio.run(main("Need to know about total album sales by artist"))
     # file_response = asyncio.run(main("create insights from given dataframe"))
     print("-------Output-------")

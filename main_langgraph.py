@@ -5,10 +5,12 @@ from typing_extensions import TypedDict, Annotated, Optional
 from sqlalchemy import Engine, create_engine
 from langchain_core.messages import HumanMessage
 
-from agents import  sql_query_creator, file_reader, master, insights_curator
+from agents import  sql_query_creator, file_reader, master, insights_curator, chart_generator
 from agents.file_reader import file_reader_agent, FileSuccess
 from agents.sql_query_creator import sql_query_creator_agent, SQLSuccess
 from agents.insights_curator import data_insights_agent, DataframeSuccess
+from agents.chart_generator import chart_creator_agent, ChartSuccess
+
 from agents.master import (
                         master_agent, MasterAgentResponse,
                         SQL_AGENT,
@@ -32,19 +34,23 @@ class AllState(TypedDict):
     db_engine: str
     files: str
     agent: str
-    sql_query: str | None
-    detail: str | None
+    sql_query: Optional[str]
+    detail: Optional[str]
     query_results_json: Optional[str]
-    sql_error_message: str | None
+    sql_error_message: Optional[str]
     data_insights: Optional[list[str]]
-    insights_error: str | None
-    file_content: str | None
-    summary: str | None
-    file_error_message: str | None
+    insights_error: Optional[str]
+    python_codes: Optional[list[str]]
+    chart_error: str 
+
+    insights_error: Optional[str]
+    file_content: Optional[str]
+    summary: Optional[str]
+    file_error_message: Optional[str]
 
 class FileReaderState(TypedDict):
     request: str
-    error_message: str | None = None
+    error_message: Optional[str] = None
 
 def master_agent_node(state = AllState):
     master_agent_response = master_agent.run_sync(
@@ -104,6 +110,22 @@ def data_insights_node(state: AllState):
         return {
             "insights_error": data_insights_agent_response.output.error_message
         }        
+    
+def chart_generator_node(state: AllState):
+    chart_creator_response = chart_creator_agent.run_sync(
+                user_prompt=state["request"][-1].content,
+                deps=chart_generator.Dependencies(  query_results_json= state["query_results_json"]
+                )
+    )
+    
+    if isinstance(chart_creator_response.output, ChartSuccess):
+        return {
+            "python_codes": chart_creator_response.output.python_codes,
+        }
+    else: # InvalidRequest
+        return {
+            "chart_error": chart_creator_response.output.error_message
+        }     
 
 def output(state: AllState):
     import json
@@ -140,6 +162,17 @@ def after_sql_router(state: AllState):
     else: # This means it was originally SQL_AGENT
         return "data_insights_agent"
     
+def after_sql_router(state: AllState):
+    # If the master agent decided on a SQL path (SQL_AGENT or BOTH_AGENT),
+    # we always want to proceed to data insights first.
+    return "data_insights_agent"
+
+def after_chart_router(state: AllState):
+    if state["agent"] == BOTH_AGENT:
+        return "file_reader_agent"
+    else:
+        return "output"
+
 def create_graph():
     graph = StateGraph(AllState)
 
@@ -148,7 +181,7 @@ def create_graph():
     graph.add_node("file_reader_agent", file_reader_node)
     graph.add_node("output", output)
     graph.add_node("data_insights_agent", data_insights_node)
-
+    graph.add_node("chart_generator_agent", chart_generator_node)
 
     graph.add_conditional_edges("master",
                                 sql_or_output_router,
@@ -162,13 +195,20 @@ def create_graph():
     graph.add_conditional_edges("sql_query_create_agent",
                                 after_sql_router,
                                 {
-                                    "file_reader_agent": "file_reader_agent", # If both, go to file reader
                                     "data_insights_agent": "data_insights_agent" # If only SQL, go to output
                                 }
     )
 
-    graph.add_edge("file_reader_agent", "output")
-    graph.add_edge("data_insights_agent", "output")
+    graph.add_conditional_edges("chart_generator_agent",
+                                after_chart_router,
+                                {
+                                    "file_reader_agent": "file_reader_agent",
+                                    "output": "output"
+                                }
+    )
+
+    graph.add_edge("file_reader_agent", "output") # This edge is still needed for the file reader path
+    graph.add_edge("data_insights_agent", "chart_generator_agent")
     graph.add_edge("output", END)
 
     graph.set_entry_point("master")
@@ -187,7 +227,7 @@ def main():
 
     initial_state = {
                         "request":
-                            [HumanMessage(content="I want to know how many sales of albums each artist with at least one rock genre and create insights")],
+                            [HumanMessage(content="I want to know how many sales of albums each artist with at least one rock genre. I want to create insights and the data visualized in bar chart and scatter plot")],
                         # "db_engine":
                         #     create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment'),
                         # "files": 
