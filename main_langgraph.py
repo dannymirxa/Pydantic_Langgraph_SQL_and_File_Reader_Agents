@@ -120,9 +120,9 @@ def data_insights_node(state: AllState):
         }
     
 def chart_generator_node(state: AllState):
-    chart_prompt = f"I want to create insights and the data visualized in among these charts: {chartOptions}."
+    print(f"DEBUG: query_results_json content: {state['query_results_json']}")
     chart_creator_response = chart_creator_agent.run_sync(
-                user_prompt=chart_prompt,
+                user_prompt=state["request"][-1].content, # Pass the original user request
                 deps=chart_generator.Dependencies(  query_results_json= state["query_results_json"]
                 )
     )
@@ -194,6 +194,8 @@ def after_sql_router(state: AllState):
 
 def after_chart_router(state: AllState):
     # Always proceed to run_code after chart generation if successful
+    if state["agent"] == BOTH_AGENT:
+        return "file_reader_agent"
     if state.get("python_codes"): # Check if python_codes were generated
         return "run_code"
     else: # Otherwise, go to output (e.g., if chart generation failed or no codes were expected)
@@ -230,7 +232,8 @@ def create_graph():
                                 after_chart_router,
                                 {
                                     "file_reader_agent": "file_reader_agent",
-                                    "run_code": "run_code"
+                                    "run_code": "run_code",
+                                    "output": "output"
                                 }
     )
     graph.add_edge("data_insights_agent", "chart_generator_agent")
@@ -255,7 +258,7 @@ def main():
     initial_state = {
                         "request":
                             [HumanMessage(content="I want to know how many sales of albums each artist with at least one rock genre. I want to create insights and the data visualized in bar chart, scatter plot and line chart. " \
-                            "                       I also need the content of specific agent pdf.")],
+                                                    "I also need the content of specific agent pdf.")],
                         # "db_engine":
                         #     create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment'),
                         # "files": 

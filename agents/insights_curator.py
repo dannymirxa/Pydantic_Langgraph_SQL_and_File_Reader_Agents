@@ -69,17 +69,19 @@ def system_prompt() -> str:
     To achieve this, you must follow these steps:
     1. **Obtain the Data**: Call the 'create_dataframe_pd_tool' to get the DataFrame metadata.
     2. **Analyze the DataFrame Metadata**: Once you have the DataFrame metadata, carefully examine its properties:
-    - The total number of rows (num_rows).
-    - The total number of columns (num_columns).
-    - The names of all columns (column_names).
-    - The data types of each column (data_types).
-    - Any missing values per column (missing_values).
+        - The total number of rows (num_rows).
+        - The total number of columns (num_columns).
+        - The names of all columns (column_names).
+        - The data types of each column (data_types).
+        - Any missing values per column (missing_values).
     3. **Generate Insights and Questions**: Based on your analysis of the DataFrame's metadata, provide the following:
-    - A brief, insightful description of what this dataset contains, highlighting its main purpose or content.
-    - 8 to 10 *actionable* data analysis questions that could be explored using this dataset. These questions should go beyond simple observations and suggest potential analyses or deeper dives into the data.
+        - A brief, insightful description of what this dataset contains, highlighting its main purpose or content.
+        - 8 to 10 *actionable* data analysis questions that could be explored using this dataset. These questions should go beyond simple observations and suggest potential analyses or deeper dives into the data.
 
     After obtaining and analyzing the metadata, your *final* output must be a 'DataframeSuccess' object containing a list of strings for 'data_insights'.
     If any error occurs during data retrieval or insight generation, return an 'InsightsError' object.
+    
+    **Important**: The `create_dataframe_pd_tool` will return a `DataFrameMetadata` object. You must then use the information from this `DataFrameMetadata` object to formulate the `data_insights` and return a `DataframeSuccess` object. Do NOT return the `DataFrameMetadata` object as your final output.
     """
 
 @data_insights_agent.output_validator

@@ -85,6 +85,8 @@ def system_prompt(ctx: RunContext[Dependencies]) -> str:
     7.  **Do NOT include `fig.show()` in the Python code**, as the chart display is handled by saving to HTML.
     8.  Return the insights and the Python code as per the `ChartResponses` model. If multiple charts are requested or appropriate, provide a list of Python code strings.
 
+    **Important**: The DataFrame `df` provided to you is the result of a pre-filtered SQL query. It already contains the data relevant to the user's request (e.g., sales of albums by artists with at least one rock genre). Do not attempt to re-filter or re-process the data based on criteria that have already been applied upstream. Focus solely on visualizing the provided `df`.
+
     If the request is unclear or cannot be fulfilled with the given data, return an `ChartError` with an explanation.
 
     Example of Python code structure for multiple charts:
