@@ -95,14 +95,28 @@ async def main(request: str):
                                                           deps=deps)
 
     return chart_agent_response
-    
+
+from langchain_core.messages import HumanMessage
+from graphs.sql_insights_charts import create_sql_insights_charts_graph
+
 if  __name__ == '__main__':
     
-    file_response = asyncio.run(main("I  want to know the total sales by artist in vertical and horizontal bar charts"))
+    # file_response = asyncio.run(main("I  want to know the total sales by artist in vertical and horizontal bar charts"))
     # file_response = asyncio.run(main("Need to know about total album sales by artist"))
     # file_response = asyncio.run(main("create insights from given dataframe"))
+    graph = create_sql_insights_charts_graph()
+    initial_state = {
+                    "request":
+                        [HumanMessage(content="I want to know how many sales of albums for artist named Eminem. I want to create insights and the data visualized in 1. bar chart, 2. scatter plot and 3. line chart. ")],
+                    "db_engine":
+                        'postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment'
+                }
     print("-------Output-------")
-    print(file_response.output)
+    outputs = graph.invoke(initial_state)
+
+    for output in outputs:
+        print(output)
+    # print(file_response.output)
     # print(file_response.output.sql_query)
     # print(file_response.output.detail)
 

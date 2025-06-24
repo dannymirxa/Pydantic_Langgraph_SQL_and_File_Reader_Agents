@@ -21,7 +21,7 @@ async_client = AsyncAzureOpenAI(
     azure_endpoint = "https://llmcoechangemateopenai2.openai.azure.com/",
     api_key=AZURE_OPENAI_KEY,
     api_version="2024-10-21",
-    azure_deployment='gpt-4o'
+    azure_deployment='gpt-4o-dev'
 )
 
 OPENAI_MODEL = OpenAIModel(

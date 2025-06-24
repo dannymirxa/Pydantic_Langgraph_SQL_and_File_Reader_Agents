@@ -67,9 +67,9 @@ def master_system_prompt(ctx: RunContext[MasterDependencies]) -> str:
 
 @master_agent.output_validator
 def validate_result(ctx: RunContext[None], response: MasterAgentResponse) -> MasterAgentResponse:
-    if response.agent not in [SQL_AGENT, FILE_AGENT, BOTH_AGENT]:
+    if response.agent not in [SQL_AGENT, FILE_AGENT, BOTH_AGENT, NONE]:
         raise ModelRetry(
-            f"Invalid action. Please choose from `{SQL_AGENT}`, `{FILE_AGENT}`, or `{BOTH_AGENT}``"
+            f"Invalid action. Please choose from `{SQL_AGENT}`, `{FILE_AGENT}`, `{BOTH_AGENT}` or `{NONE}`"
         )
 
     return response

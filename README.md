@@ -13,20 +13,26 @@ The system is composed of the following key components:
 1. **`MasterAgent`**: The central orchestrator. It receives user requests, determines the intent (SQL query, file reading, or both), and delegates the task to the appropriate sub-agent.
 2. **`SQL Query Creator Agent`**: Specializes in interacting with a PostgreSQL database. It can list tables, describe table schemas, and execute SQL queries.
 3. **`File Reader Agent`**: Specializes in reading and summarizing content from various file types (JSON, CSV, TXT, PDF).
-4. **`Models`**: Defines the Pydantic models for input/output types and the OpenAI model configuration.
-5. **`Utility Functions`**: Provides helper functions for file operations (listing, reading various formats) and SQL operations (listing tables, describing tables, running queries).
+4. **`Insights Curator Agent`**: Specializes in generating data insights from SQL query results.
+5. **`Chart Generator Agent`**: Specializes in generating Python code for data visualizations (charts) based on query results.
+6. **`Models`**: Defines the Pydantic models for input/output types and the OpenAI model configuration.
+7. **`Utility Functions`**: Provides helper functions for file operations (listing, reading various formats) and SQL operations (listing tables, describing tables, running queries).
 
 ### Detailed Architecture
 
 - **MasterAgent**: Acts as the brain of the system, interpreting user requests and deciding which sub-agent to delegate the task to. It uses a system prompt to guide its decision-making process.
 - **SQL Query Creator Agent**: Handles all interactions with the PostgreSQL database. It can list available tables, describe table schemas, and execute SQL queries. It provides detailed explanations of the queries and their results.
 - **File Reader Agent**: Handles reading and summarizing content from various file types. It validates the existence of the requested file, determines the file type, and uses the appropriate tool to read the content.
-- **Models**: Defines the data structures used for input and output. This includes models for user requests, SQL responses, file responses, and error handling.
+- **Insights Curator Agent**: Processes SQL query results (as DataFrames) to extract key insights and suggest further analytical questions.
+- **Chart Generator Agent**: Takes processed data and user requests to generate Plotly Python code for various chart types, saving them as HTML files.
+- **Models**: Defines the data structures used for input and output. This includes models for user requests, SQL responses, file responses, insights, chart code, and error handling.
 - **Utility Functions**: Provides common functions for file and SQL operations. These functions are used by the agents to perform their tasks.
 
 ## Agents
 
 ### Master Agent (`agents/master.py` and `main.py`)
+
+<img src="graph.png" style="width:500px;">
 
 The `MasterAgent` is responsible for intelligent routing.
 
@@ -38,6 +44,8 @@ The `MasterAgent` is responsible for intelligent routing.
 - **Output Type**: `MasterAgentResponse` which wraps either a `SQLResponse` or a `FileResponse`.
 
 ### SQL Query Creator Agent (`agents/sql_query_creator.py`)
+
+<img src="graphs/sql_query_create_agent.png" style="width:500px;">
 
 This agent handles all database interactions.
 
@@ -62,14 +70,35 @@ This agent handles reading content from various file types.
   - `read_pdf_tool(file_path: str)`: Reads and summarizes PDF files.
 - **Output Type**: `FileResponse` (Union of `FileSuccess` or `InvalidRequest`).
 
+### Insights Curator Agent (`agents/insights_curator.py`)
+
+This agent focuses on extracting meaningful insights from data.
+
+- **Purpose**: To analyze query results (provided as a Pandas DataFrame) and generate key data insights and analytical questions.
+- **System Prompt**: Guides the agent to obtain DataFrame metadata, analyze it, and then generate a brief description of the dataset and 8-10 actionable data analysis questions.
+- **Tools**:
+  - `create_dataframe_pd_tool()`: Creates a Pandas DataFrame from JSON query results and returns its metadata (rows, columns, data types, missing values).
+- **Output Type**: `DataframeSuccess` (containing a list of insights) or `InsightsError`.
+
+### Chart Generator Agent (`agents/chart_generator.py`)
+
+This agent is responsible for visualizing data.
+
+- **Purpose**: To generate Plotly Python code for various chart types based on user requests and query results.
+- **System Prompt**: Instructs the agent to analyze the user's request and the provided DataFrame, adhere to requested chart types (if suitable), generate insights, and produce executable Plotly Python code. It emphasizes saving charts as HTML files (e.g., `templates/chart_0.html`) and *not* using `fig.show()`.
+- **Output Type**: `ChartSuccess` (containing a list of Python code strings) or `ChartError`.
+
 ## Models (`models.py`)
 
 - `OPENAI_MODEL`: Configures the OpenAI model (`gpt-4o`) used by the agents, including Azure OpenAI specific settings.
 - `Request`: A Pydantic model for general user queries.
-- `ChartResponses`: A Pydantic model for insights and Python code for plotting graphs (though charting functionality is not fully implemented in the provided `main.py`).
 - `SQLSuccess`: Represents a successful SQL query execution, including the query and a detailed explanation/result.
 - `FileSuccess`: Represents successful file content retrieval, including the content and a summary.
 - `InvalidRequest`: A common model used across agents to indicate an error or an invalid request.
+- `DataframeSuccess`: Represents successful data insights generation, including the SQL query, detail, query results, and a list of data insights.
+- `InsightsError`: Indicates an error during insights generation.
+- `ChartSuccess`: Represents successful chart code generation, including a list of Python code strings.
+- `ChartError`: Indicates an error during chart generation.
 
 ## Utility Functions
 
@@ -121,7 +150,7 @@ This agent handles reading content from various file types.
 
 ### Running the Application
 
-The `main.py` script contains examples of how to use the `MasterAgent`.
+The `main_langgraph.py` script contains examples of how to use the `MasterAgent` within a LangGraph setup.
 
 To run the examples:
 
@@ -129,8 +158,9 @@ To run the examples:
 poetry run python main.py
 ```
 
-You can modify the `main` function in `main.py` to test different user requests.
+You can modify the `main` function in `main_langgraph.py` to test different user requests.
 
+```python
 ```python
 async def main(request: str):
     # Dynamically get available files
@@ -156,6 +186,25 @@ if __name__ == "__main__":
     print(response.output)
 ```
 
+The `graphs/sql_insights_charts.py` script demonstrates a more advanced LangGraph setup that integrates SQL querying, data insights, and chart generation.
+
+To run this advanced example:
+
+```bash
+poetry run python graphs/sql_insights_charts.py
+```
+
+You can modify the `initial_state` in the `main` function of `graphs/sql_insights_charts.py` to test different user requests, including those that involve generating insights and charts.
+
+```python
+initial_state = {
+    "request": [HumanMessage(content="I want to know how many sales of albums each artist with at least one rock genre. I want to create insights and the data visualized in 1. bar chart, 2. scatter plot and 3. line chart. ")],
+    "db_engine": 'postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment',
+    "files": "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files"
+}
+```
+```
+
 ### Troubleshooting
 
 - **Database Connection Issues**: Ensure that your PostgreSQL instance is running and that the `DATABASE_URL` is correctly configured.
@@ -169,7 +218,7 @@ if __name__ == "__main__":
 
 ## Usage Examples
 
-Here are some examples of how to use the application:
+Here are some examples of how to use the application with `main_langgraph.py`:
 
 1. **SQL Query Example**:
     ```python
@@ -189,4 +238,21 @@ Here are some examples of how to use the application:
     print(response.output)
     ```
 
-These examples demonstrate how to interact with the `MasterAgent` to perform SQL queries and read file content. You can modify the requests to suit your specific needs.
+And here's an example demonstrating the advanced capabilities with `graphs/sql_insights_charts.py`, including insights and chart generation:
+
+```python
+initial_state = {
+    "request": [HumanMessage(content="I want to know how many sales of albums each artist with at least one rock genre. I want to create insights and the data visualized in 1. bar chart, 2. scatter plot and 3. line chart. ")],
+    "db_engine": 'postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment',
+    "files": "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files"
+}
+# To run this, you would typically use:
+# for event in graph.stream(initial_state):
+#     for key in event:
+#         print("\n-----------------------------------")
+#         print("Done with " + key)
+#         print("\n*******************************************\n")
+# graph.invoke(initial_state)
+```
+
+These examples demonstrate how to interact with the `MasterAgent` and the integrated LangGraph for SQL queries, file content reading, data insights, and chart generation. You can modify the requests to suit your specific needs.
