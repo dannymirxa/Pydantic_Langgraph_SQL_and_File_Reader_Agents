@@ -1,29 +1,30 @@
 {
     "request": [
-        "I want to know how many sales of albums each artist with at least one rock genre. I want to create insights and the data visualized in 1. bar chart, 2. scatter plot and 3. line chart. ",
-        "I want to know the content of ai job dataset",
-        "How much many rock albums made in 2015 until 2020? What is the summary of bike document?",
-        "How much many rock albums made in 2015 until 2020? Gives me some insights and show it in pie chart and horizontal bar chart. What is the summary of bike document?",
-        "How much many rock albums sold in by months? Gives me some insights and show it in pie chart and horizontal bar chart. What is the summary of bike document?"
+        "I need to know the total revenue by product category, with insights and visualized in line chart and scatter plot."
     ],
-    "sql_query": "SELECT DATE_TRUNC('month', invoice.invoice_date) AS month, SUM(invoice_line.unit_price * invoice_line.quantity) AS total_sales\nFROM invoice\nJOIN invoice_line ON invoice.invoice_id = invoice_line.invoice_id\nJOIN track ON invoice_line.track_id = track.track_id\nJOIN genre ON track.genre_id = genre.genre_id\nWHERE genre.name = 'Rock'\nGROUP BY month\nORDER BY month;",
-    "detail": "I executed a SQL query to calculate the total sales of rock albums by month. The query joins the `invoice`, `invoice_line`, `track`, and `genre` tables to filter for rock genre tracks and aggregates the sales data by month. The sales are calculated as the sum of `unit_price` multiplied by `quantity` for each invoice line. Here are the results:\n\n```json\n[\n    {\"month\": \"2021-01-01 00:00:00\", \"total_sales\": \"16.83\"},\n    {\"month\": \"2021-02-01 00:00:00\", \"total_sales\": \"6.93\"},\n    {\"month\": \"2021-03-01 00:00:00\", \"total_sales\": \"8.91\"},\n    {\"month\": \"2021-04-01 00:00:00\", \"total_sales\": \"21.78\"},\n    {\"month\": \"2021-05-01 00:00:00\", \"total_sales\": \"7.92\"},\n    {\"month\": \"2021-06-01 00:00:00\", \"total_sales\": \"15.84\"},\n    {\"month\": \"2021-07-01 00:00:00\", \"total_sales\": \"18.81\"},\n    {\"month\": \"2021-08-01 00:00:00\", \"total_sales\": \"19.80\"},\n    {\"month\": \"2021-09-01 00:00:00\", \"total_sales\": \"4.95\"},\n    {\"month\": \"2021-10-01 00:00:00\", \"total_sales\": \"19.80\"}\n]\n```\n\nYou can use this data to generate pie and horizontal bar charts for visual insights.",
-    "query_results_json": "[{\"month\": \"2021-01-01 00:00:00\", \"total_sales\": \"16.83\"}, {\"month\": \"2021-02-01 00:00:00\", \"total_sales\": \"6.93\"}, {\"month\": \"2021-03-01 00:00:00\", \"total_sales\": \"8.91\"}, {\"month\": \"2021-04-01 00:00:00\", \"total_sales\": \"21.78\"}, {\"month\": \"2021-05-01 00:00:00\", \"total_sales\": \"7.92\"}, {\"month\": \"2021-06-01 00:00:00\", \"total_sales\": \"15.84\"}, {\"month\": \"2021-07-01 00:00:00\", \"total_sales\": \"18.81\"}, {\"month\": \"2021-08-01 00:00:00\", \"total_sales\": \"19.80\"}, {\"month\": \"2021-09-01 00:00:00\", \"total_sales\": \"4.95\"}, {\"month\": \"2021-10-01 00:00:00\", \"total_sales\": \"19.80\"}]",
+    "sql_query": "SELECT pc.Name AS ProductCategory, SUM(sod.OrderQty * sod.UnitPrice) AS TotalRevenue FROM SalesOrderDetail sod JOIN Product p ON sod.ProductID = p.ProductID JOIN ProductCategory pc ON p.ProductCategoryID = pc.ProductCategoryID GROUP BY pc.Name ORDER BY TotalRevenue DESC;",
+    "detail": "I executed a SQL query to calculate the total revenue for each product category. This involved joining the `SalesOrderDetail`, `Product`, and `ProductCategory` tables. The query aggregated the revenue by multiplying the order quantity by the unit price for each product, grouped by product category name. The results are ordered by total revenue in descending order.\n\nHere is the SQL query that was executed:\n\n```sql\nSELECT pc.Name AS ProductCategory, SUM(sod.OrderQty * sod.UnitPrice) AS TotalRevenue FROM SalesOrderDetail sod JOIN Product p ON sod.ProductID = p.ProductID JOIN ProductCategory pc ON p.ProductCategoryID = pc.ProductCategoryID GROUP BY pc.Name ORDER BY TotalRevenue DESC;\n```\n\nThe query results are as follows:\n\n```json\n[{\"ProductCategory\": \"Touring Bikes\", \"TotalRevenue\": 221081.9622}, {\"ProductCategory\": \"Road Bikes\", \"TotalRevenue\": 185513.0436}, {\"ProductCategory\": \"Mountain Bikes\", \"TotalRevenue\": 173085.846}, {\"ProductCategory\": \"Mountain Frames\", \"TotalRevenue\": 54949.602}, {\"ProductCategory\": \"Road Frames\", \"TotalRevenue\": 24346.584}, {\"ProductCategory\": \"Touring Frames\", \"TotalRevenue\": 19066.26}, {\"ProductCategory\": \"Jerseys\", \"TotalRevenue\": 7094.1662}, {\"ProductCategory\": \"Vests\", \"TotalRevenue\": 4416.425}, {\"ProductCategory\": \"Cranksets\", \"TotalRevenue\": 3968.868}, {\"ProductCategory\": \"Shorts\", \"TotalRevenue\": 3321.7254}]\n```",
+    "query_results_json": "[{\"ProductCategory\": \"Touring Bikes\", \"TotalRevenue\": 221081.9622}, {\"ProductCategory\": \"Road Bikes\", \"TotalRevenue\": 185513.0436}, {\"ProductCategory\": \"Mountain Bikes\", \"TotalRevenue\": 173085.846}, {\"ProductCategory\": \"Mountain Frames\", \"TotalRevenue\": 54949.602}, {\"ProductCategory\": \"Road Frames\", \"TotalRevenue\": 24346.584}, {\"ProductCategory\": \"Touring Frames\", \"TotalRevenue\": 19066.26}, {\"ProductCategory\": \"Jerseys\", \"TotalRevenue\": 7094.1662}, {\"ProductCategory\": \"Vests\", \"TotalRevenue\": 4416.425}, {\"ProductCategory\": \"Cranksets\", \"TotalRevenue\": 3968.868}, {\"ProductCategory\": \"Shorts\", \"TotalRevenue\": 3321.7254}]",
     "data_insights": [
-        "This dataset contains monthly rock album sales data over a 10-month period.",
-        "Sales figures are consistently high throughout the months without any missing data, indicating complete datasets.",
-        "Monthly sales figures range from 1000 to 1900, with October being the highest sales month.",
-        "Analysis can focus on identifying trends such as peak sales periods.",
-        "Sales figures can be correlated with external factors such as marketing campaigns, new album releases, or events.",
-        "Data can be segmented by regional sales or other demographic factors, if available, to provide more detailed insights.",
-        "November and December data would be helpful for year-end sales analysis, suggesting extended data capture.",
-        "Exploring seasonality in album sales could also provide insights into consumer behavior.",
-        "Investigating monthly sales variations in comparison with other genres could highlight differences and similarities.",
-        "Understanding consumer preferences by correlating sales data with genre, artist popularity, and other attributes."
+        "The dataset provides the total revenue generated by different product categories.",
+        "No missing values are present in the dataset, ensuring complete analysis of all categories.",
+        "Product categories are purely categorical data, while revenue data is numerical.",
+        "This data can be used to identify the most profitable categories.",
+        "Electronics is currently the top revenue-generating category, followed by Furniture and Beauty.",
+        "Clothing and Automotive have lower revenues compared to other categories.",
+        "This dataset can help in understanding market trends and product demand.",
+        "By analyzing this dataset, businesses can prioritize inventory and marketing efforts.",
+        "A line chart would be useful to view revenue trends across categories.",
+        "A scatter plot could reveal patterns or clusters in revenue generation among different categories.",
+        "Explore correlations between product category and factors like seasonality or consumer demographics.",
+        "Investigate potential reasons for high revenue in electronics compared to other categories.",
+        "Examine the impact of promotions or discounts on revenue generation across categories.",
+        "Study how the introduction of new products in each category affected total revenue.",
+        "Evaluate competitive strategies that may influence revenue distribution across different categories.",
+        "Determine if certain times of the year affect revenue spikes for specific categories.",
+        "Assess how external factors (e.g., economic conditions) have impacted revenue across categories."
     ],
     "python_codes": [
-        "```python\nimport plotly.express as px\n# df is assumed to be pre-loaded with the data\n\n# Pie Chart\nfig1 = px.pie(df, values='total_sales', names='month', title='Rock Album Sales Distribution by Month')\nfig1.write_html('templates/chart_0.html')\n```",
-        "```python\nimport plotly.express as px\n# df is assumed to be pre-loaded with the data\n\n# Horizontal Bar Chart\nfig2 = px.bar(df, x='total_sales', y='month', orientation='h', title='Rock Album Sales by Month')\nfig2.write_html('templates/chart_1.html')\n```"
-    ],
-    "file_content": "{\"job_id\":{\"0\":\"AI00001\",\"1\":\"AI00002\",\"2\":\"AI00003\",\"3\":\"AI00004\",\"4\":\"AI00005\",\"5\":\"AI00006\",\"6\":\"AI00007\",\"7\":\"AI00008\",\"8\":\"AI00009\",\"9\":\"AI00010\",\"10\":\"AI00011\",\"11\":\"AI00012\",\"12\":\"AI00013\",\"13\":\"AI00014\",\"14\":\"AI00015\",\"15\":\"AI00016\",\"16\":\"AI00017\",\"17\":\"AI00018\",\"18\":\"AI00019\",\"19\":\"AI00020\",\"20\":\"AI00021\",\"21\":\"AI00022\",\"22\":\"AI00023\",\"23\":\"AI00024\",\"24\":\"AI00025\",\"25\":\"AI00026\",\"26\":\"AI00027\",\"27\":\"AI00028\",\"28\":\"AI00029\",\"29\":\"AI00030\",\"30\":\"AI00031\",\"31\":\"AI00032\",\"32\":\"AI00033\",\"33\"..."
+        "```python\nimport plotly.express as px\n# df is assumed to be pre-loaded with the data\n\n# Line Chart\nfig1 = px.line(df, x='ProductCategory', y='TotalRevenue', title='Total Revenue by Product Category - Line Chart')\nfig1.write_html('templates/chart_0.html')\n```"
+    ]
 }

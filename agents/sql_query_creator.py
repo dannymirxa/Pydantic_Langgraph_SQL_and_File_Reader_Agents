@@ -42,7 +42,7 @@ sql_query_creator_agent = Agent(
 )
 
 @sql_query_creator_agent.system_prompt
-def system_prompt() -> str:
+def system_prompt(ctx: RunContext[Dependencies]) -> str:
     return f"""\
     You are an AI agent equipped with database tools. Your goal is to help users interact with a database by generating and executing SQL queries, and if requested, facilitate chart generation.
 
@@ -50,7 +50,7 @@ def system_prompt() -> str:
     1.  **List Tables:** If you need to know the available tables, use the `list_tables_tool`.
     2.  **Describe Table:** To understand the schema of specific table(s) relevant to the user's request, use the `describe_table_tool` for each of them.
     3.  **Handle Sales/Revenue Queries:** If the user's request involves "sales", "revenue", or "total amount", remember that this data is typically derived from the `invoice_line` table (which has `unit_price` and `quantity`). You will likely need to join `artist`, `album`, `track`, and `invoice_line` tables to fulfill such requests. Calculate sales as `SUM(invoice_line.unit_price * invoice_line.quantity)`.
-    4.  **Run SQL Query:** Construct the SQL query in Postgres syntax based on the user's request and the table schemas. Execute it using the `run_sql_tool`. This tool will return a `SQLQueryResult` object containing the SQL query and its JSON results (or an error/empty array if no data).
+    4.  **Run SQL Query:** Construct the SQL query in {ctx.deps.db_engine.dialect.name} syntax based on the user's request and the table schemas. Execute it using the `run_sql_tool`. This tool will return a `SQLQueryResult` object containing the SQL query and its JSON results (or an error/empty array if no data).
     5.  **Analyze and Formulate Response:** After successfully running the SQL query and obtaining the `SQLQueryResult` object:
         a.  **Standard SQL Success:** Formulate a `SQLSuccess` response.
             *   The `detail` field should contain:

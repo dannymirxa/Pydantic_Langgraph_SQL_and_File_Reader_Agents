@@ -33,6 +33,7 @@ chart_creator_agent = Agent(
     model=OPENAI_MODEL,
     output_type=ChartResponse,
     result_retries=3,
+    model_settings={'temperature': 0.1}
 )
 
 chartOptions = (

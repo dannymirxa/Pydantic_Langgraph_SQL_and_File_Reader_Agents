@@ -68,4 +68,7 @@ def run_sql_query(db_engine: Engine, query: str, limit: Optional[int] = 10) -> s
 
 # db_engine = create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment')
 
-# print(run_sql_query(db_engine=db_engine, query="SELECT * FROM artist;"))
+# db_engine = create_engine('sqlite:///AdventureWorks-sqlite.db')
+
+# print(run_sql_query(db_engine=db_engine, query="SELECT * FROM Address;"))
+# print(db_engine.dialect.name)
