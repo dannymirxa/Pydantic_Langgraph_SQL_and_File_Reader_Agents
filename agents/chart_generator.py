@@ -1,4 +1,4 @@
-from models import OPENAI_MODEL
+from models import ACTIVE_MODEL
 
 from dotenv import load_dotenv
 from dataclasses import dataclass
@@ -30,10 +30,10 @@ ChartResponse: TypeAlias = Union[
 
 
 chart_creator_agent = Agent(
-    model=OPENAI_MODEL,
+    model=ACTIVE_MODEL,
     output_type=ChartResponse,
     result_retries=3,
-    model_settings={'temperature': 0.1}
+    model_settings={'temperature': 0.1, 'max_tokens': 1000}
 )
 
 chartOptions = (

@@ -48,8 +48,8 @@ class AllState(TypedDict):
     insights_error: Optional[str]
     file_content: Optional[str]
 
-def sql_query_creator_node(state: AllState):
-    sql_query_agent_response = sql_query_creator_agent.run_sync(
+async def sql_query_creator_node(state: AllState):
+    sql_query_agent_response = await sql_query_creator_agent.run(
         user_prompt=state["request"][-1].content,
         deps=sql_query_creator.Dependencies(db_engine=create_engine(state["db_engine"]))
         )
@@ -65,8 +65,8 @@ def sql_query_creator_node(state: AllState):
             "sql_error_message": sql_query_agent_response.output.error_message
         }
     
-def data_insights_node(state: AllState):
-    data_insights_agent_response = data_insights_agent.run_sync(
+async def data_insights_node(state: AllState):
+    data_insights_agent_response = await data_insights_agent.run(
             user_prompt=state["request"][-1].content,
             deps=insights_curator.Dependencies( sql_query= state["sql_query"],
                                                 detail= state["detail"],
@@ -83,9 +83,9 @@ def data_insights_node(state: AllState):
             "insights_error": data_insights_agent_response.output.error_message
         }
     
-def chart_generator_node(state: AllState):
+async def chart_generator_node(state: AllState):
     # print(f"DEBUG: query_results_json content: {state['query_results_json']}")
-    chart_creator_response = chart_creator_agent.run_sync(
+    chart_creator_response = await chart_creator_agent.run(
                 user_prompt=state["request"][-1].content, # Pass the original user request
                 deps=chart_generator.Dependencies(  query_results_json= state["query_results_json"]
                 )
@@ -188,12 +188,12 @@ def main():
     # with open("graph.png", "wb") as f:
     #     f.write(graph_png)
 
-    # for event in graph.stream(initial_state):
-    #     for key in event:
-    #         print("\n-----------------------------------")
-    #         print("Done with " + key)
-    #         print("\n*******************************************\n")
-    graph.invoke(initial_state)
+    for event in graph.astream(initial_state):
+        for key in event:
+            print("\n-----------------------------------")
+            print("Done with " + key)
+            print("\n*******************************************\n")
+    # graph.invoke(initial_state)
 
 
 if  __name__ == "__main__":

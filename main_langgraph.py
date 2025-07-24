@@ -48,22 +48,23 @@ class AllState(TypedDict):
     summary: Optional[str]
     file_error_message: Optional[str]
 
-def master_agent_node(state = AllState):
-    master_agent_response = master_agent.run_sync(
+async def master_agent_node(state = AllState):
+    master_agent_response = await master_agent.run(
         user_prompt=state["request"][-1].content,
         deps=master.MasterDependencies(db_engine=create_engine(state["db_engine"]), available_files=list_files(dir =state["files"]))
         )
+    print(master_agent_response.output.agent)
     return {
         "agent": master_agent_response.output.agent
     }
 
-def sql_query_creator_node(state: AllState):
+async def sql_query_creator_node(state: AllState):
     graph = create_sql_insights_charts_graph()
-    outputs = graph.invoke(state)
+    outputs = await graph.ainvoke(state)
     return outputs
 
-def file_reader_node(state: AllState):
-    file_reader_agent_response = file_reader_agent.run_sync(
+async def file_reader_node(state: AllState):
+    file_reader_agent_response = await file_reader_agent.run(
         user_prompt=state["request"][-1].content,
         deps= file_reader.Dependencies(files=list_files(state["files"]))
         )
@@ -79,7 +80,7 @@ def file_reader_node(state: AllState):
         }
 
 
-def output(state: AllState):
+async def output(state: AllState):
     import json
     output_state = state.copy()
     if "db_engine" in output_state:
@@ -96,7 +97,7 @@ def output(state: AllState):
         json.dump(output_state, f, indent=4)
     return state
 
-def sql_or_file_router(state: AllState):
+async def sql_or_file_router(state: AllState):
     if state["agent"] == BOTH_AGENT:
         return ["sql_insights_charts_graph", "file_reader_agent"]
     elif state["agent"] == SQL_AGENT:
@@ -114,7 +115,6 @@ def create_graph():
     graph.add_node("master", master_agent_node)
     graph.add_node("sql_insights_charts_graph", sql_query_creator_node)
     graph.add_node("file_reader_agent", file_reader_node)
-    # graph.add_node("parallel_execution_node", lambda x: x) # A pass-through node
     graph.add_node("output", output)
 
     graph.add_conditional_edges("master",
@@ -135,17 +135,17 @@ def create_graph():
 
 graph = create_graph()
 
-def main():
+async def main():
 
     from langchain_core.runnables.graph import MermaidDrawMethod
 
-    graph_png = graph.get_graph().draw_mermaid_png(
-        draw_method=MermaidDrawMethod.PYPPETEER,
-    )
+    # graph_png = graph.get_graph().draw_mermaid_png(
+    #     draw_method=MermaidDrawMethod.PYPPETEER,
+    # )
 
     initial_state = {
                         "request":
-                            [HumanMessage(content="Hello")],
+                            [HumanMessage(content="How sales of pop album by each artist? Give insights and visualize them in horizontal bar chart.")],
                         # "db_engine":
                         #     create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment'),
                         # "files": 
@@ -156,14 +156,24 @@ def main():
                             "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files"
                     }
 
-    with open("graph.png", "wb") as f:
-        f.write(graph_png)
+    # async for event in graph.astream(initial_state):
+    #     for key in event:
+    #         print("\n-----------------------------------")
+    #         print("Done with " + key)
+    #         print("\n*******************************************\n")
 
-    for event in graph.stream(initial_state):
-        for key in event:
-            print("\n-----------------------------------")
-            print("Done with " + key)
-            print("\n*******************************************\n")
+    result = await graph.ainvoke(initial_state)
 
+    return result
+
+import asyncio
 if  __name__ == "__main__":
-    main()
+    # from langchain_core.runnables.graph import MermaidDrawMethod
+    # graph_png = graph.get_graph().draw_mermaid_png(
+    #     draw_method=MermaidDrawMethod.PYPPETEER,
+    # )
+    # with open("graph.png", "wb") as f:
+    #     f.write(graph_png)
+    
+    result = asyncio.run(main())
+    print(result)

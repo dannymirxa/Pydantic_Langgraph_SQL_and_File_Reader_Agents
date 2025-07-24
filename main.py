@@ -9,7 +9,7 @@ from pydantic_ai import Agent, ModelRetry, RunContext
 from sqlalchemy import create_engine, Engine
 import logfire
 
-from models import OPENAI_MODEL
+from models import ACTIVE_MODEL
 from agents import file_reader, master, sql_query_creator_insights_curator
 from agents.sql_query_creator_insights_curator import sql_query_creator_agent, SQLResponse
 from agents.file_reader import file_reader_agent,  FileResponse
@@ -34,7 +34,7 @@ class MasterDependencies:
     available_files: list[str]
 
 master_agent = Agent(
-    model=OPENAI_MODEL,
+    model=ACTIVE_MODEL,
     output_type=MasterAgentResponse,
     result_retries=3,
 )

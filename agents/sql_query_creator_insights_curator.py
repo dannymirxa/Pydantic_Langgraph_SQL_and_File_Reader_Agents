@@ -3,7 +3,7 @@ import sys
 # adding Folder_2 to the system path
 # sys.path.insert(0, 'utils')
 from util_functions.sql_operations import list_tables, describe_table, run_sql_query
-from models import OPENAI_MODEL
+from models import ACTIVE_MODEL
 
 from agents import insights_curator
 from agents.insights_curator import data_insights_agent, DataframeSuccess, InsightsError, DataframeResponse
@@ -40,7 +40,7 @@ class Dependencies:
     sql_query: str | None = None
 
 sql_query_creator_agent = Agent(
-    model=OPENAI_MODEL,
+    model=ACTIVE_MODEL,
     output_type=SQLResponse,
     result_retries=3,
 )

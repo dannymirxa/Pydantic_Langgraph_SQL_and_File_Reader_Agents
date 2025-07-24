@@ -3,7 +3,7 @@ import sys
 # adding Folder_2 to the system path
 # sys.path.insert(0, 'utils')
 from util_functions.file_operations import list_files, read_json, read_csv, read_pdf, read_txt
-from models import OPENAI_MODEL
+from models import ACTIVE_MODEL
 
 from dotenv import load_dotenv
 from dataclasses import dataclass
@@ -30,9 +30,10 @@ class Dependencies:
     files: list[str]
 
 file_reader_agent = Agent(
-    model=OPENAI_MODEL,
+    model=ACTIVE_MODEL,
     output_type=FileResponse,
     result_retries=3,
+    model_settings={'max_tokens': 1000}
 )
 
 @file_reader_agent.system_prompt

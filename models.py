@@ -15,7 +15,7 @@ load_dotenv('.env')
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 AZURE_OPENAI_KEY = os.getenv("AZURE_OPENAI_KEY")
 
-# GEMINI_MODEL = GeminiModel('gemini-2.0-flash', provider=GoogleGLAProvider(api_key=GEMINI_API_KEY))
+GEMINI_MODEL = GeminiModel('gemini-2.0-flash', provider=GoogleGLAProvider(api_key=GEMINI_API_KEY))
 
 async_client = AsyncAzureOpenAI(
     azure_endpoint = "https://llmcoechangemateopenai2.openai.azure.com/",
@@ -28,6 +28,11 @@ OPENAI_MODEL = OpenAIModel(
     'gpt-4o',
     provider=OpenAIProvider(openai_client=async_client),
 )
+
+ACTIVE_MODEL = GEMINI_MODEL
+
+# from pydantic_ai import Agent
+# print(Agent(OPENAI_MODEL).run_sync("hello"))
 
 class Request(BaseModel):
     query: Annotated[str, MinLen(1)]

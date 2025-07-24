@@ -1,4 +1,4 @@
-from models import OPENAI_MODEL
+from models import ACTIVE_MODEL
 
 from dataclasses import dataclass
 from typing_extensions import List, TypeAlias, Union, Dict, Any
@@ -37,9 +37,10 @@ DataframeResponse: TypeAlias = Union[
                                      ]
 
 data_insights_agent = Agent(
-    model=OPENAI_MODEL,
+    model=ACTIVE_MODEL,
     output_type=DataframeResponse,
     result_retries=3,
+    model_settings={'temperature': 0.1, 'max_tokens': 1000}
 )
 
 @data_insights_agent.tool
