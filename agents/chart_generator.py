@@ -1,3 +1,8 @@
+import os
+
+# Change the working directory to the desired path
+os.chdir('/home/azureuser/cloudfiles/code/Users/danial.m.bin.madrawi/Pydantic_Langgraph_SQL_and_File_Reader_Agents')
+
 from models import OPENAI_MODEL
 
 from dotenv import load_dotenv
@@ -10,7 +15,7 @@ from pydantic_ai import Agent, ModelRetry, RunContext
 
 import io
 
-load_dotenv("/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/.env")
+load_dotenv(".env")
 
 @dataclass
 class Dependencies:

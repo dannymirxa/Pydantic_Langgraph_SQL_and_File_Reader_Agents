@@ -1,3 +1,8 @@
+import os
+
+# Change the working directory to the desired path
+os.chdir('/home/azureuser/cloudfiles/code/Users/danial.m.bin.madrawi/Pydantic_Langgraph_SQL_and_File_Reader_Agents')
+
 import sys
 import asyncio
 from dotenv import load_dotenv

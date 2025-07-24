@@ -1,3 +1,9 @@
+
+import os
+
+# Change the working directory to the desired path
+# os.chdir('/home/azureuser/cloudfiles/code/Users/danial.m.bin.madrawi/Pydantic_Langgraph_SQL_and_File_Reader_Agents')
+
 from dotenv import load_dotenv
 from langgraph.graph import END, START, StateGraph
 from langgraph.graph.message import AnyMessage, add_messages
@@ -25,7 +31,7 @@ from agents.master import (
 from util_functions.file_operations import list_files
 
 
-load_dotenv()
+load_dotenv(".env")
 
 # db_engine = create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment')
 # files = list_files(dir ="/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files")
@@ -139,25 +145,25 @@ def main():
 
     from langchain_core.runnables.graph import MermaidDrawMethod
 
-    graph_png = graph.get_graph().draw_mermaid_png(
-        draw_method=MermaidDrawMethod.PYPPETEER,
-    )
+    # graph_png = graph.get_graph().draw_mermaid_png(
+    #     draw_method=MermaidDrawMethod.PYPPETEER,
+    # )
 
     initial_state = {
                         "request":
-                            [HumanMessage(content="Hello")],
+                            [HumanMessage(content="Give me the number of sales of rock albums by artist. Give insights and visualize them in bar graph and pie chart.")],
                         # "db_engine":
                         #     create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment'),
                         # "files": 
                         #     list_files(dir ="/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files")
                         "db_engine":
-                           'postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment',
+                           'sqlite:///Chinook_Sqlite.sqlite',
                         "files": 
-                            "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files"
+                            "./files"
                     }
 
-    with open("graph.png", "wb") as f:
-        f.write(graph_png)
+    # with open("graph.png", "wb") as f:
+    #     f.write(graph_png)
 
     for event in graph.stream(initial_state):
         for key in event:
@@ -165,5 +171,6 @@ def main():
             print("Done with " + key)
             print("\n*******************************************\n")
 
+import asyncio
 if  __name__ == "__main__":
     main()

@@ -1,3 +1,7 @@
+import os
+
+# Change the working directory to the desired path
+os.chdir('/home/azureuser/cloudfiles/code/Users/danial.m.bin.madrawi/Pydantic_Langgraph_SQL_and_File_Reader_Agents')
 import sys
 
 # adding Folder_2 to the system path
@@ -14,7 +18,7 @@ from annotated_types import MinLen
 from pydantic_ai import Agent, ModelRetry, RunContext
 
 
-load_dotenv("/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/.env")
+load_dotenv(".env")
 
 class FileSuccess(BaseModel):
     file_content: Annotated[str, MinLen(1)] = Field(alias='file_content', description='text content of the file')

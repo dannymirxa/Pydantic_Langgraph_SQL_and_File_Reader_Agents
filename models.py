@@ -1,3 +1,8 @@
+import os
+
+# Change the working directory to the desired path
+os.chdir('/home/azureuser/cloudfiles/code/Users/danial.m.bin.madrawi/Pydantic_Langgraph_SQL_and_File_Reader_Agents')
+
 from pydantic import BaseModel, Field
 from typing import Annotated, List, Dict, Any, Optional, Union
 from annotated_types import MinLen
@@ -10,7 +15,7 @@ from pydantic_ai.providers.openai import OpenAIProvider
 from dotenv import load_dotenv
 import os
 
-load_dotenv('.env')
+load_dotenv('./.env')
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 AZURE_OPENAI_KEY = os.getenv("AZURE_OPENAI_KEY")

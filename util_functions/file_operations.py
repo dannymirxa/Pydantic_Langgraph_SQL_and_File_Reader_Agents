@@ -54,8 +54,8 @@ def read_json(file_path: str) -> dict:
             "summary": summary
         }
 
-if __name__=="__main__":
-    print(list_files(dir ="/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files"))
+# if __name__=="__main__":
+#     print(list_files(dir ="/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files"))
     # print(read_pdf("/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files/Specific Agents Versus Generality.pdf"))
     # print(read_txt(file= "/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files/risc.txt"))
     # print(read_csv(file="/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files/ai_job_dataset.csv"))

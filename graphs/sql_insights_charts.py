@@ -21,9 +21,9 @@ from agents.chart_generator import chart_creator_agent, ChartSuccess
 
 load_dotenv()
 
-import logfire
-logfire.configure(token=os.getenv("LOGFIRE_TOKEN"))
-logfire.instrument_pydantic_ai() 
+# import logfire
+# logfire.configure(token=os.getenv("LOGFIRE_TOKEN"))
+# logfire.instrument_pydantic_ai() 
 
 # db_engine = create_engine('postgresql+psycopg2://chinook:chinook@localhost:5433/chinook_auto_increment')
 # files = list_files(dir ="/mnt/c/Projects/Pydantic_Langgraph_SQL_and_File_Reader_Agents/files")

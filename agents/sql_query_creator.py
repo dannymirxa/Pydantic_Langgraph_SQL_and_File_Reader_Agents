@@ -1,4 +1,9 @@
-import sys
+import os
+
+# Change the working directory to the desired path
+os.chdir('/home/azureuser/cloudfiles/code/Users/danial.m.bin.madrawi/Pydantic_Langgraph_SQL_and_File_Reader_Agents')
+
+import sys, json
 
 # adding Folder_2 to the system path
 # sys.path.insert(0, 'utils')
@@ -43,13 +48,14 @@ sql_query_creator_agent = Agent(
 
 @sql_query_creator_agent.system_prompt
 def system_prompt(ctx: RunContext[Dependencies]) -> str:
+    table_names = json.loads(list_tables(ctx.deps.db_engine))
     return f"""\
     You are an AI agent equipped with database tools. Your goal is to help users interact with a database by generating and executing SQL queries, and if requested, facilitate chart generation.
 
     Follow these steps meticulously:
     1.  **List Tables:** If you need to know the available tables, use the `list_tables_tool`.
     2.  **Describe Table:** To understand the schema of specific table(s) relevant to the user's request, use the `describe_table_tool` for each of them.
-    3.  **Handle Sales/Revenue Queries:** If the user's request involves "sales", "revenue", or "total amount", remember that this data is typically derived from the `invoice_line` table (which has `unit_price` and `quantity`). You will likely need to join `artist`, `album`, `track`, and `invoice_line` tables to fulfill such requests. Calculate sales as `SUM(invoice_line.unit_price * invoice_line.quantity)`.
+    3.  **Handle Sales/Revenue Queries:** If the user's request involves "sales", "revenue", or "total amount", remember that this data is typically derived from the `{table_names[3]}` table (which has `unit_price` and `quantity`). You will likely need to join `{table_names[0]}`, `{table_names[1]}`, `{table_names[2]}`, and `{table_names[3]}` tables to fulfill such requests. Calculate sales as `SUM({table_names[3]}.unit_price * {table_names[3]}.quantity)`.
     4.  **Run SQL Query:** Construct the SQL query in {ctx.deps.db_engine.dialect.name} syntax based on the user's request and the table schemas. Execute it using the `run_sql_tool`. This tool will return a `SQLQueryResult` object containing the SQL query and its JSON results (or an error/empty array if no data).
     5.  **Analyze and Formulate Response:** After successfully running the SQL query and obtaining the `SQLQueryResult` object:
         a.  **Standard SQL Success:** Formulate a `SQLSuccess` response.
@@ -59,7 +65,7 @@ def system_prompt(ctx: RunContext[Dependencies]) -> str:
                 - The complete JSON string result from `run_sql_tool`. This JSON string should be presented clearly within a JSON markdown code block.
             *   The `query_results_json` field MUST contain the complete JSON string result from `run_sql_tool`. If the query yields no data, this field MUST be an empty JSON array (e.g., "[]").
             *   If at any stage an error occurs (e.g., `run_sql_tool` returns an error), explain this in the `detail` field of `SQLSuccess` and set `query_results_json` to an empty JSON array ("[]"), or use an `InvalidRequest` response if appropriate (e.g., user request is malformed).
-    
+
     **Important Note on SQL Aliases:** Avoid using reserved SQL keywords (like `as`, `from`, `where`, etc.) as unquoted aliases for tables or columns in your queries to prevent syntax errors. Use descriptive aliases or quote them if necessary.
     """
 
